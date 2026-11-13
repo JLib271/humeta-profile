@@ -1,0 +1,46 @@
+name: Check
+
+# On every pull request and push: the generated files match their sources, the example records are
+# valid, and the STEMEd+ discipline list matches its schema. The generator is the HuMeta Portal's
+# implementation of the profile, so this checks out HuMeta's main branch to run it.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: humeta-profile
+      - uses: actions/checkout@v7
+        with:
+          repository: JLib271/HuMeta
+          path: humeta
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install "jsonschema[format]>=4.18"
+      - name: Generated files are up to date
+        run: python humeta/scripts/build_profile_artifacts.py --profile-dir humeta-profile --check
+      - name: Example records and the discipline list are valid
+        working-directory: humeta-profile
+        run: |
+          python - <<'EOF'
+          import json, pathlib, jsonschema
+          record_schema = json.loads(pathlib.Path("schema/humeta-record.schema.json").read_text())
+          for example in sorted(pathlib.Path("examples").glob("*.json")):
+              if example.name.endswith(".datacite.json"):
+                  continue
+              jsonschema.validate(json.loads(example.read_text()), record_schema)
+              print("valid:", example)
+          jsonschema.validate(json.loads(pathlib.Path("stemedplus_disciplines.json").read_text()),
+                              json.loads(pathlib.Path("schema/stemedplus_disciplines.schema.json").read_text()))
+          print("valid: stemedplus_disciplines.json")
+          EOF

@@ -1,0 +1,38 @@
+name: Propose a change
+description: Add, change, or remove an element, a vocabulary term, or a crosswalk. Open for at least 14 days of comment.
+labels: ["proposal"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of change
+      options:
+        - New vocabulary term
+        - Change to a vocabulary term
+        - New optional element
+        - Change to an element (obligation, cardinality, definition)
+        - Crosswalk or alignment
+        - Field module
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Element or vocabulary
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: The change
+      description: What should change, and the exact wording if you have it.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Who needs it, and any standards or vocabularies it should align with.
+    validations:
+      required: true

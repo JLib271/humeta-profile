@@ -1,0 +1,4351 @@
+{
+  "profile": "humeta",
+  "profile_version": "1.0.0-draft.1",
+  "note": "Controlled vocabularies of the HuMeta profile. 'eric' lists ERIC Thesaurus descriptors for the term (see crosswalks/eric_descriptor_status.json for verification). Term codes are permanent: never change or reuse a code; deprecate it instead. 'ddi' maps a term to a DDI Alliance controlled vocabulary (cv, code, match). 'fos' is the OECD Fields of Science and Technology code. 'isced' is the ISCED 2011 level. 'rs' is a RightsStatements.org statement. 'tadirah' is a TaDiRAH 2.0.3 concept identifier.",
+  "vocabularies": {
+    "research_field": {
+      "label": "Research field",
+      "definition": "Broad field(s) the study belongs to. Choose all that apply; interdisciplinary studies choose several. Mapped to the OECD Fields of Science and Technology (FOS) used by DataCite.",
+      "terms": [
+        {
+          "id": "education",
+          "label": "Education",
+          "fos": "5.3",
+          "eric": [
+            "Educational Research"
+          ]
+        },
+        {
+          "id": "social_sciences",
+          "label": "Social sciences (including psychology, communication, economics, sociology)",
+          "fos": "5",
+          "eric": []
+        },
+        {
+          "id": "humanities",
+          "label": "Humanities (including history, languages and literature, philosophy, religion)",
+          "fos": "6",
+          "eric": []
+        },
+        {
+          "id": "arts",
+          "label": "Arts (visual arts, performing arts, music, design, art history)",
+          "fos": "6.4",
+          "eric": []
+        },
+        {
+          "id": "other_field",
+          "label": "Other field (e.g., natural sciences, health, engineering)",
+          "eric": []
+        }
+      ]
+    },
+    "discipline": {
+      "label": "Discipline or subject area",
+      "definition": "Discipline(s) or subject area(s) the study is about; for education studies, also the subject taught or learned. Terms are the Divisions (broad) and Groups of the Australian and New Zealand Standard Research Classification (ANZSRC) 2020 Fields of Research. Based on Australian Bureau of Statistics and Stats NZ material, (c) Commonwealth of Australia and Crown Copyright New Zealand 2020, used under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); HuMeta added the OECD FOS mapping and '(all)' division labels (see THIRD_PARTY_NOTICES.md). 'anzsrc' is the FoR code (concept URI https://linked.data.gov.au/def/anzsrc-for/2020/<code>); 'fos' is the corresponding OECD Fields of Science code used for DataCite. Terms marked deprecated are the profile's earlier discipline list; records using them are moved to the terms in replaced_by.",
+      "terms": [
+        {
+          "id": "anzsrc_30",
+          "label": "Agricultural, veterinary and food sciences (all)",
+          "anzsrc": "30",
+          "fos": "4",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_3001",
+          "label": "Agricultural biotechnology",
+          "anzsrc": "3001",
+          "fos": "4.4",
+          "eric": [],
+          "division": "anzsrc_30"
+        },
+        {
+          "id": "anzsrc_3002",
+          "label": "Agriculture, land and farm management",
+          "anzsrc": "3002",
+          "fos": "4.1",
+          "eric": [],
+          "division": "anzsrc_30"
+        },
+        {
+          "id": "anzsrc_3003",
+          "label": "Animal production",
+          "anzsrc": "3003",
+          "fos": "4.2",
+          "eric": [],
+          "division": "anzsrc_30"
+        },
+        {
+          "id": "anzsrc_3004",
+          "label": "Crop and pasture production",
+          "anzsrc": "3004",
+          "fos": "4.1",
+          "eric": [],
+          "division": "anzsrc_30"
+        },
+        {
+          "id": "anzsrc_3005",
+          "label": "Fisheries sciences",
+          "anzsrc": "3005",
+          "fos": "4.1",
+          "eric": [],
+          "division": "anzsrc_30"
+        },
+        {
+          "id": "anzsrc_3006",
+          "label": "Food sciences",
+          "anzsrc": "3006",
+          "fos": "4.5",
+          "eric": [],
+          "division": "anzsrc_30"
+        },
+        {
+          "id": "anzsrc_3007",
+          "label": "Forestry sciences",
+          "anzsrc": "3007",
+          "fos": "4.1",
+          "eric": [],
+          "division": "anzsrc_30"
+        },
+        {
+          "id": "anzsrc_3008",
+          "label": "Horticultural production",
+          "anzsrc": "3008",
+          "fos": "4.1",
+          "eric": [],
+          "division": "anzsrc_30"
+        },
+        {
+          "id": "anzsrc_3009",
+          "label": "Veterinary sciences",
+          "anzsrc": "3009",
+          "fos": "4.3",
+          "eric": [],
+          "division": "anzsrc_30"
+        },
+        {
+          "id": "anzsrc_3099",
+          "label": "Other agricultural, veterinary and food sciences",
+          "anzsrc": "3099",
+          "fos": "4.5",
+          "eric": [],
+          "division": "anzsrc_30"
+        },
+        {
+          "id": "anzsrc_31",
+          "label": "Biological sciences (all)",
+          "anzsrc": "31",
+          "fos": "1.6",
+          "eric": [
+            "Biology"
+          ]
+        },
+        {
+          "id": "anzsrc_3101",
+          "label": "Biochemistry and cell biology",
+          "anzsrc": "3101",
+          "fos": "1.6",
+          "eric": [],
+          "division": "anzsrc_31"
+        },
+        {
+          "id": "anzsrc_3102",
+          "label": "Bioinformatics and computational biology",
+          "anzsrc": "3102",
+          "fos": "1.6",
+          "eric": [],
+          "division": "anzsrc_31"
+        },
+        {
+          "id": "anzsrc_3103",
+          "label": "Ecology",
+          "anzsrc": "3103",
+          "fos": "1.6",
+          "eric": [],
+          "division": "anzsrc_31"
+        },
+        {
+          "id": "anzsrc_3104",
+          "label": "Evolutionary biology",
+          "anzsrc": "3104",
+          "fos": "1.6",
+          "eric": [],
+          "division": "anzsrc_31"
+        },
+        {
+          "id": "anzsrc_3105",
+          "label": "Genetics",
+          "anzsrc": "3105",
+          "fos": "1.6",
+          "eric": [],
+          "division": "anzsrc_31"
+        },
+        {
+          "id": "anzsrc_3106",
+          "label": "Industrial biotechnology",
+          "anzsrc": "3106",
+          "fos": "2.9",
+          "eric": [],
+          "division": "anzsrc_31"
+        },
+        {
+          "id": "anzsrc_3107",
+          "label": "Microbiology",
+          "anzsrc": "3107",
+          "fos": "1.6",
+          "eric": [],
+          "division": "anzsrc_31"
+        },
+        {
+          "id": "anzsrc_3108",
+          "label": "Plant biology",
+          "anzsrc": "3108",
+          "fos": "1.6",
+          "eric": [],
+          "division": "anzsrc_31"
+        },
+        {
+          "id": "anzsrc_3109",
+          "label": "Zoology",
+          "anzsrc": "3109",
+          "fos": "1.6",
+          "eric": [],
+          "division": "anzsrc_31"
+        },
+        {
+          "id": "anzsrc_3199",
+          "label": "Other biological sciences",
+          "anzsrc": "3199",
+          "fos": "1.6",
+          "eric": [],
+          "division": "anzsrc_31"
+        },
+        {
+          "id": "anzsrc_32",
+          "label": "Biomedical and clinical sciences (all)",
+          "anzsrc": "32",
+          "fos": "3.2",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_3201",
+          "label": "Cardiovascular medicine and haematology",
+          "anzsrc": "3201",
+          "fos": "3.2",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3202",
+          "label": "Clinical sciences",
+          "anzsrc": "3202",
+          "fos": "3.2",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3203",
+          "label": "Dentistry",
+          "anzsrc": "3203",
+          "fos": "3.2",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3204",
+          "label": "Immunology",
+          "anzsrc": "3204",
+          "fos": "3.1",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3205",
+          "label": "Medical biochemistry and metabolomics",
+          "anzsrc": "3205",
+          "fos": "3.1",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3206",
+          "label": "Medical biotechnology",
+          "anzsrc": "3206",
+          "fos": "3.4",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3207",
+          "label": "Medical microbiology",
+          "anzsrc": "3207",
+          "fos": "3.1",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3208",
+          "label": "Medical physiology",
+          "anzsrc": "3208",
+          "fos": "3.1",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3209",
+          "label": "Neurosciences",
+          "anzsrc": "3209",
+          "fos": "3.1",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3210",
+          "label": "Nutrition and dietetics",
+          "anzsrc": "3210",
+          "fos": "3.3",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3211",
+          "label": "Oncology and carcinogenesis",
+          "anzsrc": "3211",
+          "fos": "3.2",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3212",
+          "label": "Ophthalmology and optometry",
+          "anzsrc": "3212",
+          "fos": "3.2",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3213",
+          "label": "Paediatrics",
+          "anzsrc": "3213",
+          "fos": "3.2",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3214",
+          "label": "Pharmacology and pharmaceutical sciences",
+          "anzsrc": "3214",
+          "fos": "3.1",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3215",
+          "label": "Reproductive medicine",
+          "anzsrc": "3215",
+          "fos": "3.2",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_3299",
+          "label": "Other biomedical and clinical sciences",
+          "anzsrc": "3299",
+          "fos": "3.2",
+          "eric": [],
+          "division": "anzsrc_32"
+        },
+        {
+          "id": "anzsrc_33",
+          "label": "Built environment and design (all)",
+          "anzsrc": "33",
+          "fos": "2.1",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_3301",
+          "label": "Architecture",
+          "anzsrc": "3301",
+          "fos": "6.4",
+          "eric": [],
+          "division": "anzsrc_33"
+        },
+        {
+          "id": "anzsrc_3302",
+          "label": "Building",
+          "anzsrc": "3302",
+          "fos": "2.1",
+          "eric": [],
+          "division": "anzsrc_33"
+        },
+        {
+          "id": "anzsrc_3303",
+          "label": "Design",
+          "anzsrc": "3303",
+          "fos": "6.4",
+          "eric": [],
+          "division": "anzsrc_33"
+        },
+        {
+          "id": "anzsrc_3304",
+          "label": "Urban and regional planning",
+          "anzsrc": "3304",
+          "fos": "5.7",
+          "eric": [],
+          "division": "anzsrc_33"
+        },
+        {
+          "id": "anzsrc_3399",
+          "label": "Other built environment and design",
+          "anzsrc": "3399",
+          "fos": "2.11",
+          "eric": [],
+          "division": "anzsrc_33"
+        },
+        {
+          "id": "anzsrc_34",
+          "label": "Chemical sciences (all)",
+          "anzsrc": "34",
+          "fos": "1.4",
+          "eric": [
+            "Chemistry"
+          ]
+        },
+        {
+          "id": "anzsrc_3401",
+          "label": "Analytical chemistry",
+          "anzsrc": "3401",
+          "fos": "1.4",
+          "eric": [],
+          "division": "anzsrc_34"
+        },
+        {
+          "id": "anzsrc_3402",
+          "label": "Inorganic chemistry",
+          "anzsrc": "3402",
+          "fos": "1.4",
+          "eric": [],
+          "division": "anzsrc_34"
+        },
+        {
+          "id": "anzsrc_3403",
+          "label": "Macromolecular and materials chemistry",
+          "anzsrc": "3403",
+          "fos": "1.4",
+          "eric": [],
+          "division": "anzsrc_34"
+        },
+        {
+          "id": "anzsrc_3404",
+          "label": "Medicinal and biomolecular chemistry",
+          "anzsrc": "3404",
+          "fos": "1.4",
+          "eric": [],
+          "division": "anzsrc_34"
+        },
+        {
+          "id": "anzsrc_3405",
+          "label": "Organic chemistry",
+          "anzsrc": "3405",
+          "fos": "1.4",
+          "eric": [],
+          "division": "anzsrc_34"
+        },
+        {
+          "id": "anzsrc_3406",
+          "label": "Physical chemistry",
+          "anzsrc": "3406",
+          "fos": "1.4",
+          "eric": [],
+          "division": "anzsrc_34"
+        },
+        {
+          "id": "anzsrc_3407",
+          "label": "Theoretical and computational chemistry",
+          "anzsrc": "3407",
+          "fos": "1.4",
+          "eric": [],
+          "division": "anzsrc_34"
+        },
+        {
+          "id": "anzsrc_3499",
+          "label": "Other chemical sciences",
+          "anzsrc": "3499",
+          "fos": "1.4",
+          "eric": [],
+          "division": "anzsrc_34"
+        },
+        {
+          "id": "anzsrc_35",
+          "label": "Commerce, management, tourism and services (all)",
+          "anzsrc": "35",
+          "fos": "5.2",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_3501",
+          "label": "Accounting, auditing and accountability",
+          "anzsrc": "3501",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_35"
+        },
+        {
+          "id": "anzsrc_3502",
+          "label": "Banking, finance and investment",
+          "anzsrc": "3502",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_35"
+        },
+        {
+          "id": "anzsrc_3503",
+          "label": "Business systems in context",
+          "anzsrc": "3503",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_35"
+        },
+        {
+          "id": "anzsrc_3504",
+          "label": "Commercial services",
+          "anzsrc": "3504",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_35"
+        },
+        {
+          "id": "anzsrc_3505",
+          "label": "Human resources and industrial relations",
+          "anzsrc": "3505",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_35"
+        },
+        {
+          "id": "anzsrc_3506",
+          "label": "Marketing",
+          "anzsrc": "3506",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_35"
+        },
+        {
+          "id": "anzsrc_3507",
+          "label": "Strategy, management and organisational behaviour",
+          "anzsrc": "3507",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_35"
+        },
+        {
+          "id": "anzsrc_3508",
+          "label": "Tourism",
+          "anzsrc": "3508",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_35"
+        },
+        {
+          "id": "anzsrc_3509",
+          "label": "Transportation, logistics and supply chains",
+          "anzsrc": "3509",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_35"
+        },
+        {
+          "id": "anzsrc_3599",
+          "label": "Other commerce, management, tourism and services",
+          "anzsrc": "3599",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_35"
+        },
+        {
+          "id": "anzsrc_36",
+          "label": "Creative arts and writing (all)",
+          "anzsrc": "36",
+          "fos": "6.4",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_3601",
+          "label": "Art history, theory and criticism",
+          "anzsrc": "3601",
+          "fos": "6.4",
+          "eric": [],
+          "division": "anzsrc_36"
+        },
+        {
+          "id": "anzsrc_3602",
+          "label": "Creative and professional writing",
+          "anzsrc": "3602",
+          "fos": "6.2",
+          "eric": [],
+          "division": "anzsrc_36"
+        },
+        {
+          "id": "anzsrc_3603",
+          "label": "Music",
+          "anzsrc": "3603",
+          "fos": "6.4",
+          "eric": [],
+          "division": "anzsrc_36"
+        },
+        {
+          "id": "anzsrc_3604",
+          "label": "Performing arts",
+          "anzsrc": "3604",
+          "fos": "6.4",
+          "eric": [],
+          "division": "anzsrc_36"
+        },
+        {
+          "id": "anzsrc_3605",
+          "label": "Screen and digital media",
+          "anzsrc": "3605",
+          "fos": "6.4",
+          "eric": [],
+          "division": "anzsrc_36"
+        },
+        {
+          "id": "anzsrc_3606",
+          "label": "Visual arts",
+          "anzsrc": "3606",
+          "fos": "6.4",
+          "eric": [],
+          "division": "anzsrc_36"
+        },
+        {
+          "id": "anzsrc_3699",
+          "label": "Other creative arts and writing",
+          "anzsrc": "3699",
+          "fos": "6.4",
+          "eric": [],
+          "division": "anzsrc_36"
+        },
+        {
+          "id": "anzsrc_37",
+          "label": "Earth sciences (all)",
+          "anzsrc": "37",
+          "fos": "1.5",
+          "eric": [
+            "Earth Science",
+            "Geology"
+          ]
+        },
+        {
+          "id": "anzsrc_3701",
+          "label": "Atmospheric sciences",
+          "anzsrc": "3701",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_37"
+        },
+        {
+          "id": "anzsrc_3702",
+          "label": "Climate change science",
+          "anzsrc": "3702",
+          "fos": "1.5",
+          "eric": [
+            "Climate",
+            "Earth Science"
+          ],
+          "division": "anzsrc_37"
+        },
+        {
+          "id": "anzsrc_3703",
+          "label": "Geochemistry",
+          "anzsrc": "3703",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_37"
+        },
+        {
+          "id": "anzsrc_3704",
+          "label": "Geoinformatics",
+          "anzsrc": "3704",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_37"
+        },
+        {
+          "id": "anzsrc_3705",
+          "label": "Geology",
+          "anzsrc": "3705",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_37"
+        },
+        {
+          "id": "anzsrc_3706",
+          "label": "Geophysics",
+          "anzsrc": "3706",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_37"
+        },
+        {
+          "id": "anzsrc_3707",
+          "label": "Hydrology",
+          "anzsrc": "3707",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_37"
+        },
+        {
+          "id": "anzsrc_3708",
+          "label": "Oceanography",
+          "anzsrc": "3708",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_37"
+        },
+        {
+          "id": "anzsrc_3709",
+          "label": "Physical geography and environmental geoscience",
+          "anzsrc": "3709",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_37"
+        },
+        {
+          "id": "anzsrc_3799",
+          "label": "Other earth sciences",
+          "anzsrc": "3799",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_37"
+        },
+        {
+          "id": "anzsrc_38",
+          "label": "Economics (all)",
+          "anzsrc": "38",
+          "fos": "5.2",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_3801",
+          "label": "Applied economics",
+          "anzsrc": "3801",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_38"
+        },
+        {
+          "id": "anzsrc_3802",
+          "label": "Econometrics",
+          "anzsrc": "3802",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_38"
+        },
+        {
+          "id": "anzsrc_3803",
+          "label": "Economic theory",
+          "anzsrc": "3803",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_38"
+        },
+        {
+          "id": "anzsrc_3899",
+          "label": "Other economics",
+          "anzsrc": "3899",
+          "fos": "5.2",
+          "eric": [],
+          "division": "anzsrc_38"
+        },
+        {
+          "id": "anzsrc_39",
+          "label": "Education (all)",
+          "anzsrc": "39",
+          "fos": "5.3",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_3901",
+          "label": "Curriculum and pedagogy",
+          "anzsrc": "3901",
+          "fos": "5.3",
+          "eric": [],
+          "division": "anzsrc_39"
+        },
+        {
+          "id": "anzsrc_3902",
+          "label": "Education policy, sociology and philosophy",
+          "anzsrc": "3902",
+          "fos": "5.3",
+          "eric": [],
+          "division": "anzsrc_39"
+        },
+        {
+          "id": "anzsrc_3903",
+          "label": "Education systems",
+          "anzsrc": "3903",
+          "fos": "5.3",
+          "eric": [],
+          "division": "anzsrc_39"
+        },
+        {
+          "id": "anzsrc_3904",
+          "label": "Specialist studies in education",
+          "anzsrc": "3904",
+          "fos": "5.3",
+          "eric": [],
+          "division": "anzsrc_39"
+        },
+        {
+          "id": "anzsrc_3999",
+          "label": "Other Education",
+          "anzsrc": "3999",
+          "fos": "5.3",
+          "eric": [],
+          "division": "anzsrc_39"
+        },
+        {
+          "id": "anzsrc_40",
+          "label": "Engineering (all)",
+          "anzsrc": "40",
+          "fos": "2",
+          "eric": [
+            "Engineering Education"
+          ]
+        },
+        {
+          "id": "anzsrc_4001",
+          "label": "Aerospace engineering",
+          "anzsrc": "4001",
+          "fos": "2.3",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4002",
+          "label": "Automotive engineering",
+          "anzsrc": "4002",
+          "fos": "2.3",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4003",
+          "label": "Biomedical engineering",
+          "anzsrc": "4003",
+          "fos": "2.6",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4004",
+          "label": "Chemical engineering",
+          "anzsrc": "4004",
+          "fos": "2.4",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4005",
+          "label": "Civil engineering",
+          "anzsrc": "4005",
+          "fos": "2.1",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4006",
+          "label": "Communications engineering",
+          "anzsrc": "4006",
+          "fos": "2.2",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4007",
+          "label": "Control engineering, mechatronics and robotics",
+          "anzsrc": "4007",
+          "fos": "2.2",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4008",
+          "label": "Electrical engineering",
+          "anzsrc": "4008",
+          "fos": "2.2",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4009",
+          "label": "Electronics, sensors and digital hardware",
+          "anzsrc": "4009",
+          "fos": "2.2",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4010",
+          "label": "Engineering practice and education",
+          "anzsrc": "4010",
+          "fos": "2.11",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4011",
+          "label": "Environmental engineering",
+          "anzsrc": "4011",
+          "fos": "2.7",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4012",
+          "label": "Fluid mechanics and thermal engineering",
+          "anzsrc": "4012",
+          "fos": "2.3",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4013",
+          "label": "Geomatic engineering",
+          "anzsrc": "4013",
+          "fos": "2.1",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4014",
+          "label": "Manufacturing engineering",
+          "anzsrc": "4014",
+          "fos": "2.3",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4015",
+          "label": "Maritime engineering",
+          "anzsrc": "4015",
+          "fos": "2.3",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4016",
+          "label": "Materials engineering",
+          "anzsrc": "4016",
+          "fos": "2.5",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4017",
+          "label": "Mechanical engineering",
+          "anzsrc": "4017",
+          "fos": "2.3",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4018",
+          "label": "Nanotechnology",
+          "anzsrc": "4018",
+          "fos": "2.10",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4019",
+          "label": "Resources engineering and extractive metallurgy",
+          "anzsrc": "4019",
+          "fos": "2.11",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_4099",
+          "label": "Other engineering",
+          "anzsrc": "4099",
+          "fos": "2.11",
+          "eric": [],
+          "division": "anzsrc_40"
+        },
+        {
+          "id": "anzsrc_41",
+          "label": "Environmental sciences (all)",
+          "anzsrc": "41",
+          "fos": "1.5",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_4101",
+          "label": "Climate change impacts and adaptation",
+          "anzsrc": "4101",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_41"
+        },
+        {
+          "id": "anzsrc_4102",
+          "label": "Ecological applications",
+          "anzsrc": "4102",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_41"
+        },
+        {
+          "id": "anzsrc_4103",
+          "label": "Environmental biotechnology",
+          "anzsrc": "4103",
+          "fos": "2.8",
+          "eric": [],
+          "division": "anzsrc_41"
+        },
+        {
+          "id": "anzsrc_4104",
+          "label": "Environmental management",
+          "anzsrc": "4104",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_41"
+        },
+        {
+          "id": "anzsrc_4105",
+          "label": "Pollution and contamination",
+          "anzsrc": "4105",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_41"
+        },
+        {
+          "id": "anzsrc_4106",
+          "label": "Soil sciences",
+          "anzsrc": "4106",
+          "fos": "4.1",
+          "eric": [],
+          "division": "anzsrc_41"
+        },
+        {
+          "id": "anzsrc_4199",
+          "label": "Other environmental sciences",
+          "anzsrc": "4199",
+          "fos": "1.5",
+          "eric": [],
+          "division": "anzsrc_41"
+        },
+        {
+          "id": "anzsrc_42",
+          "label": "Health sciences (all)",
+          "anzsrc": "42",
+          "fos": "3.3",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_4201",
+          "label": "Allied health and rehabilitation science",
+          "anzsrc": "4201",
+          "fos": "3.3",
+          "eric": [],
+          "division": "anzsrc_42"
+        },
+        {
+          "id": "anzsrc_4202",
+          "label": "Epidemiology",
+          "anzsrc": "4202",
+          "fos": "3.3",
+          "eric": [],
+          "division": "anzsrc_42"
+        },
+        {
+          "id": "anzsrc_4203",
+          "label": "Health services and systems",
+          "anzsrc": "4203",
+          "fos": "3.3",
+          "eric": [],
+          "division": "anzsrc_42"
+        },
+        {
+          "id": "anzsrc_4204",
+          "label": "Midwifery",
+          "anzsrc": "4204",
+          "fos": "3.3",
+          "eric": [],
+          "division": "anzsrc_42"
+        },
+        {
+          "id": "anzsrc_4205",
+          "label": "Nursing",
+          "anzsrc": "4205",
+          "fos": "3.3",
+          "eric": [],
+          "division": "anzsrc_42"
+        },
+        {
+          "id": "anzsrc_4206",
+          "label": "Public health",
+          "anzsrc": "4206",
+          "fos": "3.3",
+          "eric": [],
+          "division": "anzsrc_42"
+        },
+        {
+          "id": "anzsrc_4207",
+          "label": "Sports science and exercise",
+          "anzsrc": "4207",
+          "fos": "3.3",
+          "eric": [],
+          "division": "anzsrc_42"
+        },
+        {
+          "id": "anzsrc_4208",
+          "label": "Traditional, complementary and integrative medicine",
+          "anzsrc": "4208",
+          "fos": "3.3",
+          "eric": [],
+          "division": "anzsrc_42"
+        },
+        {
+          "id": "anzsrc_4299",
+          "label": "Other health sciences",
+          "anzsrc": "4299",
+          "fos": "3.3",
+          "eric": [],
+          "division": "anzsrc_42"
+        },
+        {
+          "id": "anzsrc_43",
+          "label": "History, heritage and archaeology (all)",
+          "anzsrc": "43",
+          "fos": "6.1",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_4301",
+          "label": "Archaeology",
+          "anzsrc": "4301",
+          "fos": "6.1",
+          "eric": [],
+          "division": "anzsrc_43"
+        },
+        {
+          "id": "anzsrc_4302",
+          "label": "Heritage, archive and museum studies",
+          "anzsrc": "4302",
+          "fos": "6.1",
+          "eric": [],
+          "division": "anzsrc_43"
+        },
+        {
+          "id": "anzsrc_4303",
+          "label": "Historical studies",
+          "anzsrc": "4303",
+          "fos": "6.1",
+          "eric": [],
+          "division": "anzsrc_43"
+        },
+        {
+          "id": "anzsrc_4399",
+          "label": "Other history, heritage and archaeology",
+          "anzsrc": "4399",
+          "fos": "6.1",
+          "eric": [],
+          "division": "anzsrc_43"
+        },
+        {
+          "id": "anzsrc_44",
+          "label": "Human society (all)",
+          "anzsrc": "44",
+          "fos": "5",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_4401",
+          "label": "Anthropology",
+          "anzsrc": "4401",
+          "fos": "5.4",
+          "eric": [],
+          "division": "anzsrc_44"
+        },
+        {
+          "id": "anzsrc_4402",
+          "label": "Criminology",
+          "anzsrc": "4402",
+          "fos": "5.5",
+          "eric": [],
+          "division": "anzsrc_44"
+        },
+        {
+          "id": "anzsrc_4403",
+          "label": "Demography",
+          "anzsrc": "4403",
+          "fos": "5.4",
+          "eric": [],
+          "division": "anzsrc_44"
+        },
+        {
+          "id": "anzsrc_4404",
+          "label": "Development studies",
+          "anzsrc": "4404",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_44"
+        },
+        {
+          "id": "anzsrc_4405",
+          "label": "Gender studies",
+          "anzsrc": "4405",
+          "fos": "5.4",
+          "eric": [],
+          "division": "anzsrc_44"
+        },
+        {
+          "id": "anzsrc_4406",
+          "label": "Human geography",
+          "anzsrc": "4406",
+          "fos": "5.7",
+          "eric": [],
+          "division": "anzsrc_44"
+        },
+        {
+          "id": "anzsrc_4407",
+          "label": "Policy and administration",
+          "anzsrc": "4407",
+          "fos": "5.6",
+          "eric": [],
+          "division": "anzsrc_44"
+        },
+        {
+          "id": "anzsrc_4408",
+          "label": "Political science",
+          "anzsrc": "4408",
+          "fos": "5.6",
+          "eric": [],
+          "division": "anzsrc_44"
+        },
+        {
+          "id": "anzsrc_4409",
+          "label": "Social work",
+          "anzsrc": "4409",
+          "fos": "5.4",
+          "eric": [],
+          "division": "anzsrc_44"
+        },
+        {
+          "id": "anzsrc_4410",
+          "label": "Sociology",
+          "anzsrc": "4410",
+          "fos": "5.4",
+          "eric": [],
+          "division": "anzsrc_44"
+        },
+        {
+          "id": "anzsrc_4499",
+          "label": "Other human society",
+          "anzsrc": "4499",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_44"
+        },
+        {
+          "id": "anzsrc_45",
+          "label": "Indigenous studies (all)",
+          "anzsrc": "45",
+          "fos": "5.9",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_4501",
+          "label": "Aboriginal and Torres Strait Islander culture, language and history",
+          "anzsrc": "4501",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4502",
+          "label": "Aboriginal and Torres Strait Islander education",
+          "anzsrc": "4502",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4503",
+          "label": "Aboriginal and Torres Strait Islander environmental knowledges and management",
+          "anzsrc": "4503",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4504",
+          "label": "Aboriginal and Torres Strait Islander health and wellbeing",
+          "anzsrc": "4504",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4505",
+          "label": "Aboriginal and Torres Strait Islander peoples, society and community",
+          "anzsrc": "4505",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4506",
+          "label": "Aboriginal and Torres Strait Islander sciences",
+          "anzsrc": "4506",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4507",
+          "label": "Te ahurea, reo me te hītori o te Māori (Māori culture, language and history)",
+          "anzsrc": "4507",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4508",
+          "label": "Mātauranga Māori (Māori education)",
+          "anzsrc": "4508",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4509",
+          "label": "Ngā mātauranga taiao o te Māori (Māori environmental knowledges)",
+          "anzsrc": "4509",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4510",
+          "label": "Te hauora me te oranga o te Māori (Māori health and wellbeing)",
+          "anzsrc": "4510",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4511",
+          "label": "Ngā tāngata, te porihanga me ngā hapori o te Māori (Māori peoples, society and community)",
+          "anzsrc": "4511",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4512",
+          "label": "Ngā pūtaiao Māori (Māori sciences)",
+          "anzsrc": "4512",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4513",
+          "label": "Pacific Peoples culture, language and history",
+          "anzsrc": "4513",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4514",
+          "label": "Pacific Peoples education",
+          "anzsrc": "4514",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4515",
+          "label": "Pacific Peoples environmental knowledges",
+          "anzsrc": "4515",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4516",
+          "label": "Pacific Peoples health and wellbeing",
+          "anzsrc": "4516",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4517",
+          "label": "Pacific Peoples sciences",
+          "anzsrc": "4517",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4518",
+          "label": "Pacific Peoples society and community",
+          "anzsrc": "4518",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4519",
+          "label": "Other Indigenous data, methodologies and global Indigenous studies",
+          "anzsrc": "4519",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_4599",
+          "label": "Other Indigenous studies",
+          "anzsrc": "4599",
+          "fos": "5.9",
+          "eric": [],
+          "division": "anzsrc_45"
+        },
+        {
+          "id": "anzsrc_46",
+          "label": "Information and computing sciences (all)",
+          "anzsrc": "46",
+          "fos": "1.2",
+          "eric": [
+            "Computer Science Education"
+          ]
+        },
+        {
+          "id": "anzsrc_4601",
+          "label": "Applied computing",
+          "anzsrc": "4601",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4602",
+          "label": "Artificial intelligence",
+          "anzsrc": "4602",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4603",
+          "label": "Computer vision and multimedia computation",
+          "anzsrc": "4603",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4604",
+          "label": "Cybersecurity and privacy",
+          "anzsrc": "4604",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4605",
+          "label": "Data management and data science",
+          "anzsrc": "4605",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4606",
+          "label": "Distributed computing and systems software",
+          "anzsrc": "4606",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4607",
+          "label": "Graphics, augmented reality and games",
+          "anzsrc": "4607",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4608",
+          "label": "Human-centred computing",
+          "anzsrc": "4608",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4609",
+          "label": "Information systems",
+          "anzsrc": "4609",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4610",
+          "label": "Library and information studies",
+          "anzsrc": "4610",
+          "fos": "5.8",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4611",
+          "label": "Machine learning",
+          "anzsrc": "4611",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4612",
+          "label": "Software engineering",
+          "anzsrc": "4612",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4613",
+          "label": "Theory of computation",
+          "anzsrc": "4613",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_4699",
+          "label": "Other information and computing sciences",
+          "anzsrc": "4699",
+          "fos": "1.2",
+          "eric": [],
+          "division": "anzsrc_46"
+        },
+        {
+          "id": "anzsrc_47",
+          "label": "Language, communication and culture (all)",
+          "anzsrc": "47",
+          "fos": "6.2",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_4701",
+          "label": "Communication and media studies",
+          "anzsrc": "4701",
+          "fos": "5.8",
+          "eric": [],
+          "division": "anzsrc_47"
+        },
+        {
+          "id": "anzsrc_4702",
+          "label": "Cultural studies",
+          "anzsrc": "4702",
+          "fos": "6.5",
+          "eric": [],
+          "division": "anzsrc_47"
+        },
+        {
+          "id": "anzsrc_4703",
+          "label": "Language studies",
+          "anzsrc": "4703",
+          "fos": "6.2",
+          "eric": [],
+          "division": "anzsrc_47"
+        },
+        {
+          "id": "anzsrc_4704",
+          "label": "Linguistics",
+          "anzsrc": "4704",
+          "fos": "6.2",
+          "eric": [],
+          "division": "anzsrc_47"
+        },
+        {
+          "id": "anzsrc_4705",
+          "label": "Literary studies",
+          "anzsrc": "4705",
+          "fos": "6.2",
+          "eric": [],
+          "division": "anzsrc_47"
+        },
+        {
+          "id": "anzsrc_4799",
+          "label": "Other language, communication and culture",
+          "anzsrc": "4799",
+          "fos": "6.2",
+          "eric": [],
+          "division": "anzsrc_47"
+        },
+        {
+          "id": "anzsrc_48",
+          "label": "Law and legal studies (all)",
+          "anzsrc": "48",
+          "fos": "5.5",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_4801",
+          "label": "Commercial law",
+          "anzsrc": "4801",
+          "fos": "5.5",
+          "eric": [],
+          "division": "anzsrc_48"
+        },
+        {
+          "id": "anzsrc_4802",
+          "label": "Environmental and resources law",
+          "anzsrc": "4802",
+          "fos": "5.5",
+          "eric": [],
+          "division": "anzsrc_48"
+        },
+        {
+          "id": "anzsrc_4803",
+          "label": "International and comparative law",
+          "anzsrc": "4803",
+          "fos": "5.5",
+          "eric": [],
+          "division": "anzsrc_48"
+        },
+        {
+          "id": "anzsrc_4804",
+          "label": "Law in context",
+          "anzsrc": "4804",
+          "fos": "5.5",
+          "eric": [],
+          "division": "anzsrc_48"
+        },
+        {
+          "id": "anzsrc_4805",
+          "label": "Legal systems",
+          "anzsrc": "4805",
+          "fos": "5.5",
+          "eric": [],
+          "division": "anzsrc_48"
+        },
+        {
+          "id": "anzsrc_4806",
+          "label": "Private law and civil obligations",
+          "anzsrc": "4806",
+          "fos": "5.5",
+          "eric": [],
+          "division": "anzsrc_48"
+        },
+        {
+          "id": "anzsrc_4807",
+          "label": "Public law",
+          "anzsrc": "4807",
+          "fos": "5.5",
+          "eric": [],
+          "division": "anzsrc_48"
+        },
+        {
+          "id": "anzsrc_4899",
+          "label": "Other law and legal studies",
+          "anzsrc": "4899",
+          "fos": "5.5",
+          "eric": [],
+          "division": "anzsrc_48"
+        },
+        {
+          "id": "anzsrc_49",
+          "label": "Mathematical sciences (all)",
+          "anzsrc": "49",
+          "fos": "1.1",
+          "eric": [
+            "Mathematics Education"
+          ]
+        },
+        {
+          "id": "anzsrc_4901",
+          "label": "Applied mathematics",
+          "anzsrc": "4901",
+          "fos": "1.1",
+          "eric": [],
+          "division": "anzsrc_49"
+        },
+        {
+          "id": "anzsrc_4902",
+          "label": "Mathematical physics",
+          "anzsrc": "4902",
+          "fos": "1.1",
+          "eric": [],
+          "division": "anzsrc_49"
+        },
+        {
+          "id": "anzsrc_4903",
+          "label": "Numerical and computational mathematics",
+          "anzsrc": "4903",
+          "fos": "1.1",
+          "eric": [],
+          "division": "anzsrc_49"
+        },
+        {
+          "id": "anzsrc_4904",
+          "label": "Pure mathematics",
+          "anzsrc": "4904",
+          "fos": "1.1",
+          "eric": [],
+          "division": "anzsrc_49"
+        },
+        {
+          "id": "anzsrc_4905",
+          "label": "Statistics",
+          "anzsrc": "4905",
+          "fos": "1.1",
+          "eric": [],
+          "division": "anzsrc_49"
+        },
+        {
+          "id": "anzsrc_4999",
+          "label": "Other mathematical sciences",
+          "anzsrc": "4999",
+          "fos": "1.1",
+          "eric": [],
+          "division": "anzsrc_49"
+        },
+        {
+          "id": "anzsrc_50",
+          "label": "Philosophy and religious studies (all)",
+          "anzsrc": "50",
+          "fos": "6.3",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_5001",
+          "label": "Applied ethics",
+          "anzsrc": "5001",
+          "fos": "6.3",
+          "eric": [],
+          "division": "anzsrc_50"
+        },
+        {
+          "id": "anzsrc_5002",
+          "label": "History and philosophy of specific fields",
+          "anzsrc": "5002",
+          "fos": "6.3",
+          "eric": [],
+          "division": "anzsrc_50"
+        },
+        {
+          "id": "anzsrc_5003",
+          "label": "Philosophy",
+          "anzsrc": "5003",
+          "fos": "6.3",
+          "eric": [],
+          "division": "anzsrc_50"
+        },
+        {
+          "id": "anzsrc_5004",
+          "label": "Religious studies",
+          "anzsrc": "5004",
+          "fos": "6.3",
+          "eric": [],
+          "division": "anzsrc_50"
+        },
+        {
+          "id": "anzsrc_5005",
+          "label": "Theology",
+          "anzsrc": "5005",
+          "fos": "6.3",
+          "eric": [],
+          "division": "anzsrc_50"
+        },
+        {
+          "id": "anzsrc_5099",
+          "label": "Other philosophy and religious studies",
+          "anzsrc": "5099",
+          "fos": "6.3",
+          "eric": [],
+          "division": "anzsrc_50"
+        },
+        {
+          "id": "anzsrc_51",
+          "label": "Physical sciences (all)",
+          "anzsrc": "51",
+          "fos": "1.3",
+          "eric": [
+            "Physics"
+          ]
+        },
+        {
+          "id": "anzsrc_5101",
+          "label": "Astronomical sciences",
+          "anzsrc": "5101",
+          "fos": "1.3",
+          "eric": [
+            "Astronomy"
+          ],
+          "division": "anzsrc_51"
+        },
+        {
+          "id": "anzsrc_5102",
+          "label": "Atomic, molecular and optical physics",
+          "anzsrc": "5102",
+          "fos": "1.3",
+          "eric": [],
+          "division": "anzsrc_51"
+        },
+        {
+          "id": "anzsrc_5103",
+          "label": "Classical physics",
+          "anzsrc": "5103",
+          "fos": "1.3",
+          "eric": [],
+          "division": "anzsrc_51"
+        },
+        {
+          "id": "anzsrc_5104",
+          "label": "Condensed matter physics",
+          "anzsrc": "5104",
+          "fos": "1.3",
+          "eric": [],
+          "division": "anzsrc_51"
+        },
+        {
+          "id": "anzsrc_5105",
+          "label": "Medical and biological physics",
+          "anzsrc": "5105",
+          "fos": "1.3",
+          "eric": [],
+          "division": "anzsrc_51"
+        },
+        {
+          "id": "anzsrc_5106",
+          "label": "Nuclear and plasma physics",
+          "anzsrc": "5106",
+          "fos": "1.3",
+          "eric": [],
+          "division": "anzsrc_51"
+        },
+        {
+          "id": "anzsrc_5107",
+          "label": "Particle and high energy physics",
+          "anzsrc": "5107",
+          "fos": "1.3",
+          "eric": [],
+          "division": "anzsrc_51"
+        },
+        {
+          "id": "anzsrc_5108",
+          "label": "Quantum physics",
+          "anzsrc": "5108",
+          "fos": "1.3",
+          "eric": [],
+          "division": "anzsrc_51"
+        },
+        {
+          "id": "anzsrc_5109",
+          "label": "Space sciences",
+          "anzsrc": "5109",
+          "fos": "1.3",
+          "eric": [],
+          "division": "anzsrc_51"
+        },
+        {
+          "id": "anzsrc_5110",
+          "label": "Synchrotrons and accelerators",
+          "anzsrc": "5110",
+          "fos": "1.3",
+          "eric": [],
+          "division": "anzsrc_51"
+        },
+        {
+          "id": "anzsrc_5199",
+          "label": "Other physical sciences",
+          "anzsrc": "5199",
+          "fos": "1.3",
+          "eric": [],
+          "division": "anzsrc_51"
+        },
+        {
+          "id": "anzsrc_52",
+          "label": "Psychology (all)",
+          "anzsrc": "52",
+          "fos": "5.1",
+          "eric": []
+        },
+        {
+          "id": "anzsrc_5201",
+          "label": "Applied and developmental psychology",
+          "anzsrc": "5201",
+          "fos": "5.1",
+          "eric": [],
+          "division": "anzsrc_52"
+        },
+        {
+          "id": "anzsrc_5202",
+          "label": "Biological psychology",
+          "anzsrc": "5202",
+          "fos": "5.1",
+          "eric": [],
+          "division": "anzsrc_52"
+        },
+        {
+          "id": "anzsrc_5203",
+          "label": "Clinical and health psychology",
+          "anzsrc": "5203",
+          "fos": "5.1",
+          "eric": [],
+          "division": "anzsrc_52"
+        },
+        {
+          "id": "anzsrc_5204",
+          "label": "Cognitive and computational psychology",
+          "anzsrc": "5204",
+          "fos": "5.1",
+          "eric": [],
+          "division": "anzsrc_52"
+        },
+        {
+          "id": "anzsrc_5205",
+          "label": "Social and personality psychology",
+          "anzsrc": "5205",
+          "fos": "5.1",
+          "eric": [],
+          "division": "anzsrc_52"
+        },
+        {
+          "id": "anzsrc_5299",
+          "label": "Other psychology",
+          "anzsrc": "5299",
+          "fos": "5.1",
+          "eric": [],
+          "division": "anzsrc_52"
+        },
+        {
+          "id": "discipline_general",
+          "label": "Not specific to a discipline",
+          "definition": "Applies across disciplines rather than to one subject area, e.g. a general motivation or learning-strategies questionnaire. ANZSRC has no code for this, so it is not exported as an ANZSRC or FOS subject.",
+          "eric": []
+        },
+        {
+          "id": "biology",
+          "label": "Biology and life sciences",
+          "fos": "1.6",
+          "eric": [
+            "Biology"
+          ],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_31"
+          ]
+        },
+        {
+          "id": "chemistry",
+          "label": "Chemistry",
+          "fos": "1.4",
+          "eric": [
+            "Chemistry"
+          ],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_34"
+          ]
+        },
+        {
+          "id": "physics",
+          "label": "Physics",
+          "fos": "1.3",
+          "eric": [
+            "Physics"
+          ],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_51"
+          ]
+        },
+        {
+          "id": "geoscience",
+          "label": "Geoscience / Earth science",
+          "fos": "1.5",
+          "eric": [
+            "Earth Science",
+            "Geology"
+          ],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_37"
+          ]
+        },
+        {
+          "id": "climate_science",
+          "label": "Climate and environmental science",
+          "fos": "1.5",
+          "eric": [
+            "Climate",
+            "Earth Science"
+          ],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_3702"
+          ]
+        },
+        {
+          "id": "astronomy",
+          "label": "Astronomy and space science",
+          "fos": "1.3",
+          "eric": [
+            "Astronomy"
+          ],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_5101"
+          ]
+        },
+        {
+          "id": "mathematics",
+          "label": "Mathematics and statistics",
+          "fos": "1.1",
+          "eric": [
+            "Mathematics Education"
+          ],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_49"
+          ]
+        },
+        {
+          "id": "computer_science",
+          "label": "Computer science and computing",
+          "fos": "1.2",
+          "eric": [
+            "Computer Science Education"
+          ],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_46"
+          ]
+        },
+        {
+          "id": "engineering",
+          "label": "Engineering",
+          "fos": "2",
+          "eric": [
+            "Engineering Education"
+          ],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_40"
+          ]
+        },
+        {
+          "id": "general_stem",
+          "label": "General or interdisciplinary STEM",
+          "eric": [
+            "Science Education",
+            "STEM Education"
+          ],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_31",
+            "anzsrc_34",
+            "anzsrc_37",
+            "anzsrc_46",
+            "anzsrc_49",
+            "anzsrc_51"
+          ]
+        },
+        {
+          "id": "psychology",
+          "label": "Psychology",
+          "fos": "5.1",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_52"
+          ]
+        },
+        {
+          "id": "economics",
+          "label": "Economics and business",
+          "fos": "5.2",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_38"
+          ]
+        },
+        {
+          "id": "education_studies",
+          "label": "Education (as a subject: policy, foundations, teaching and learning)",
+          "fos": "5.3",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_39"
+          ]
+        },
+        {
+          "id": "sociology",
+          "label": "Sociology and demography",
+          "fos": "5.4",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_4410"
+          ]
+        },
+        {
+          "id": "anthropology",
+          "label": "Anthropology and ethnology",
+          "fos": "5.4",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_4401"
+          ]
+        },
+        {
+          "id": "law",
+          "label": "Law",
+          "fos": "5.5",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_48"
+          ]
+        },
+        {
+          "id": "political_science",
+          "label": "Political science and public policy",
+          "fos": "5.6",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_4408"
+          ]
+        },
+        {
+          "id": "human_geography",
+          "label": "Social and economic geography",
+          "fos": "5.7",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_4406"
+          ]
+        },
+        {
+          "id": "media_communication",
+          "label": "Media and communication",
+          "fos": "5.8",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_4701"
+          ]
+        },
+        {
+          "id": "history",
+          "label": "History",
+          "fos": "6.1",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_4303"
+          ]
+        },
+        {
+          "id": "archaeology",
+          "label": "Archaeology",
+          "fos": "6.1",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_4301"
+          ]
+        },
+        {
+          "id": "languages_literature",
+          "label": "Languages, literature, and linguistics",
+          "fos": "6.2",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_4703",
+            "anzsrc_4705"
+          ]
+        },
+        {
+          "id": "philosophy_religion",
+          "label": "Philosophy, ethics, and religion",
+          "fos": "6.3",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_50"
+          ]
+        },
+        {
+          "id": "visual_arts",
+          "label": "Visual arts, design, and art history",
+          "fos": "6.4",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_3606"
+          ]
+        },
+        {
+          "id": "performing_arts",
+          "label": "Performing arts and music",
+          "fos": "6.4",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_3604"
+          ]
+        },
+        {
+          "id": "other_humanities",
+          "label": "Other humanities (e.g., cultural studies, digital humanities)",
+          "fos": "6.5",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": []
+        },
+        {
+          "id": "other_social_science",
+          "label": "Other social sciences",
+          "fos": "5.9",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": [
+            "anzsrc_44"
+          ]
+        },
+        {
+          "id": "other_discipline",
+          "label": "Other discipline",
+          "eric": [],
+          "deprecated": true,
+          "replaced_by": []
+        }
+      ]
+    },
+    "human_participants": {
+      "label": "Human participants",
+      "definition": "Whether people take part in the study. Decides which population and consent fields apply.",
+      "terms": [
+        {
+          "id": "direct",
+          "label": "Yes: people take part directly (surveys, interviews, observation, tests, creative work)",
+          "eric": []
+        },
+        {
+          "id": "indirect",
+          "label": "Indirectly: data are about people who do not take part (records, public online posts)",
+          "eric": []
+        },
+        {
+          "id": "none",
+          "label": "No: the study uses only texts, artworks, objects, or other non-human sources",
+          "eric": []
+        }
+      ]
+    },
+    "participant_role": {
+      "label": "Participant population",
+      "definition": "Who the participants are.",
+      "terms": [
+        {
+          "id": "students",
+          "label": "Students / learners",
+          "eric": []
+        },
+        {
+          "id": "educators",
+          "label": "Teachers, instructors, or teaching assistants",
+          "eric": [
+            "Teachers",
+            "College Faculty",
+            "Teaching Assistants"
+          ]
+        },
+        {
+          "id": "professionals",
+          "label": "Researchers or other professionals",
+          "eric": []
+        },
+        {
+          "id": "children_youth",
+          "label": "Children or youth",
+          "eric": []
+        },
+        {
+          "id": "adults",
+          "label": "Adults",
+          "eric": [
+            "Adults"
+          ]
+        },
+        {
+          "id": "families",
+          "label": "Families or household groups",
+          "eric": []
+        },
+        {
+          "id": "visitors",
+          "label": "Museum, science-center, or event visitors",
+          "eric": [
+            "Museums"
+          ]
+        },
+        {
+          "id": "community_members",
+          "label": "Community members / general public",
+          "eric": []
+        },
+        {
+          "id": "specific_community",
+          "label": "A specific community or cultural group",
+          "eric": [],
+          "note": "Selecting this prompts the CARE questions."
+        },
+        {
+          "id": "artists_creators",
+          "label": "Artists, writers, performers, or other creators",
+          "eric": []
+        },
+        {
+          "id": "online_authors",
+          "label": "Authors of online content (e.g., social media users)",
+          "eric": []
+        },
+        {
+          "id": "staff_leaders",
+          "label": "Staff, administrators, or organizational leaders",
+          "eric": []
+        },
+        {
+          "id": "other_participants",
+          "label": "Other participants",
+          "eric": []
+        }
+      ]
+    },
+    "education_level": {
+      "label": "Education level",
+      "definition": "Education level(s) of the participants. Levels 0–8 are the UNESCO ISCED 2011 levels of education; the last two options are HuMeta additions outside ISCED.",
+      "terms": [
+        {
+          "id": "early_childhood",
+          "label": "Early childhood / pre-K (ISCED 0)",
+          "isced": "0",
+          "eric": [
+            "Early Childhood Education"
+          ]
+        },
+        {
+          "id": "primary",
+          "label": "Primary / elementary (ISCED 1)",
+          "isced": "1",
+          "eric": [
+            "Elementary Education"
+          ]
+        },
+        {
+          "id": "lower_secondary",
+          "label": "Lower secondary / middle grades (ISCED 2)",
+          "isced": "2",
+          "eric": [
+            "Middle Schools",
+            "Secondary Education"
+          ]
+        },
+        {
+          "id": "upper_secondary",
+          "label": "Upper secondary / high school (ISCED 3)",
+          "isced": "3",
+          "eric": [
+            "High Schools",
+            "Secondary Education"
+          ]
+        },
+        {
+          "id": "postsecondary_non_tertiary",
+          "label": "Post-secondary non-tertiary, e.g. certificate programs (ISCED 4)",
+          "isced": "4",
+          "eric": [
+            "Postsecondary Education"
+          ]
+        },
+        {
+          "id": "short_cycle_tertiary",
+          "label": "Short-cycle tertiary, e.g. associate degree (ISCED 5)",
+          "isced": "5",
+          "eric": [
+            "Two Year Colleges",
+            "Postsecondary Education"
+          ]
+        },
+        {
+          "id": "bachelors",
+          "label": "Bachelor's or equivalent (ISCED 6)",
+          "isced": "6",
+          "eric": [
+            "Higher Education",
+            "Postsecondary Education",
+            "Undergraduate Students"
+          ]
+        },
+        {
+          "id": "masters",
+          "label": "Master's or equivalent (ISCED 7)",
+          "isced": "7",
+          "eric": [
+            "Higher Education",
+            "Graduate Students"
+          ]
+        },
+        {
+          "id": "doctoral",
+          "label": "Doctoral or equivalent (ISCED 8)",
+          "isced": "8",
+          "eric": [
+            "Higher Education",
+            "Graduate Students"
+          ]
+        },
+        {
+          "id": "adult_education",
+          "label": "Adult, continuing, or workforce education (not an ISCED level)",
+          "eric": [
+            "Adult Education",
+            "Adults"
+          ]
+        },
+        {
+          "id": "informal_learning",
+          "label": "Informal or out-of-school learning (not an ISCED level)",
+          "eric": [
+            "Informal Education"
+          ]
+        }
+      ]
+    },
+    "undergraduate_level": {
+      "label": "Undergraduate course level",
+      "definition": "For undergraduate studies, the course level(s) involved.",
+      "terms": [
+        {
+          "id": "introductory",
+          "label": "Introductory / first-year",
+          "eric": []
+        },
+        {
+          "id": "intermediate",
+          "label": "Intermediate / second-year",
+          "eric": []
+        },
+        {
+          "id": "advanced",
+          "label": "Advanced / third- or fourth-year",
+          "eric": []
+        },
+        {
+          "id": "capstone",
+          "label": "Upper-division / capstone",
+          "eric": []
+        }
+      ]
+    },
+    "institution_type": {
+      "label": "Institution or organization type",
+      "definition": "Type(s) of institution or organization where the study took place.",
+      "terms": [
+        {
+          "id": "k12_public",
+          "label": "Public K-12 school",
+          "eric": [
+            "Public Schools"
+          ]
+        },
+        {
+          "id": "k12_private",
+          "label": "Private K-12 school",
+          "eric": [
+            "Private Schools"
+          ]
+        },
+        {
+          "id": "two_year_college",
+          "label": "Two-year / community college",
+          "eric": [
+            "Two Year Colleges"
+          ]
+        },
+        {
+          "id": "four_year_college",
+          "label": "Four-year college or primarily undergraduate institution",
+          "eric": [
+            "Higher Education"
+          ]
+        },
+        {
+          "id": "research_university",
+          "label": "Research university",
+          "eric": [
+            "Research Universities"
+          ]
+        },
+        {
+          "id": "minority_serving",
+          "label": "Minority-serving institution",
+          "eric": [
+            "Minority Serving Institutions"
+          ]
+        },
+        {
+          "id": "hbcu",
+          "label": "Historically Black college or university",
+          "eric": [
+            "Black Colleges",
+            "Minority Serving Institutions"
+          ]
+        },
+        {
+          "id": "tribal_college",
+          "label": "Tribal college or university",
+          "eric": [
+            "Tribally Controlled Education",
+            "Minority Serving Institutions"
+          ],
+          "note": "Selecting this prompts the CARE questions."
+        },
+        {
+          "id": "museum_science_center",
+          "label": "Museum, science center, or library",
+          "eric": [
+            "Museums"
+          ]
+        },
+        {
+          "id": "community_organization",
+          "label": "Community organization",
+          "eric": [
+            "Community Organizations"
+          ]
+        },
+        {
+          "id": "online_provider",
+          "label": "Online learning provider",
+          "eric": [
+            "Distance Education"
+          ]
+        },
+        {
+          "id": "other_institution",
+          "label": "Other",
+          "eric": []
+        }
+      ]
+    },
+    "locale": {
+      "label": "Locale",
+      "definition": "Community type where the study took place, using the four NCES locale types. Choose more than one for multi-site studies. For fully online studies, leave blank and use Modality.",
+      "terms": [
+        {
+          "id": "city",
+          "label": "City (NCES 11–13)",
+          "eric": [
+            "Urban Areas"
+          ]
+        },
+        {
+          "id": "suburb",
+          "label": "Suburb (NCES 21–23)",
+          "eric": []
+        },
+        {
+          "id": "town",
+          "label": "Town (NCES 31–33)",
+          "eric": []
+        },
+        {
+          "id": "rural",
+          "label": "Rural (NCES 41–43)",
+          "eric": [
+            "Rural Areas"
+          ]
+        }
+      ]
+    },
+    "modality": {
+      "label": "Instructional modality",
+      "definition": "How instruction or participation was delivered.",
+      "terms": [
+        {
+          "id": "in_person",
+          "label": "In person",
+          "eric": []
+        },
+        {
+          "id": "online_synchronous",
+          "label": "Online, synchronous",
+          "eric": [
+            "Online Courses",
+            "Synchronous Communication"
+          ]
+        },
+        {
+          "id": "online_asynchronous",
+          "label": "Online, asynchronous",
+          "eric": [
+            "Online Courses",
+            "Asynchronous Communication"
+          ]
+        },
+        {
+          "id": "hybrid",
+          "label": "Hybrid / blended",
+          "eric": [
+            "Blended Learning"
+          ]
+        },
+        {
+          "id": "not_instructional",
+          "label": "Not an instructional setting",
+          "eric": []
+        }
+      ]
+    },
+    "learning_environment": {
+      "label": "Learning environment",
+      "definition": "The instructional setting in which learning or data collection took place.",
+      "terms": [
+        {
+          "id": "large_lecture",
+          "label": "Large lecture class",
+          "eric": [
+            "Large Group Instruction",
+            "Lecture Method"
+          ]
+        },
+        {
+          "id": "small_class",
+          "label": "Small class, seminar, recitation, or discussion section",
+          "eric": [
+            "Small Group Instruction"
+          ]
+        },
+        {
+          "id": "laboratory",
+          "label": "Laboratory",
+          "eric": [
+            "Laboratories",
+            "Science Laboratories"
+          ]
+        },
+        {
+          "id": "field",
+          "label": "Field course, field trip, or field site",
+          "eric": [
+            "Field Trips"
+          ]
+        },
+        {
+          "id": "online_course",
+          "label": "Online course environment",
+          "eric": [
+            "Online Courses"
+          ]
+        },
+        {
+          "id": "museum_exhibit",
+          "label": "Museum, exhibit, or science center",
+          "eric": [
+            "Museums",
+            "Informal Education"
+          ]
+        },
+        {
+          "id": "out_of_school_program",
+          "label": "Afterschool, summer, or out-of-school program",
+          "eric": [
+            "After School Programs",
+            "Summer Programs"
+          ]
+        },
+        {
+          "id": "community_or_public_space",
+          "label": "Community setting, public space, or event",
+          "eric": []
+        },
+        {
+          "id": "home_family",
+          "label": "Home or family setting",
+          "eric": []
+        },
+        {
+          "id": "workplace",
+          "label": "Workplace or professional setting",
+          "eric": []
+        },
+        {
+          "id": "k12_classroom",
+          "label": "K-12 classroom",
+          "eric": []
+        },
+        {
+          "id": "postsecondary_classroom",
+          "label": "College or university classroom",
+          "eric": []
+        },
+        {
+          "id": "other_environment",
+          "label": "Other",
+          "eric": []
+        }
+      ]
+    },
+    "pedagogy": {
+      "label": "Instructional approach",
+      "definition": "Main instructional approach(es) used or studied (optional).",
+      "terms": [
+        {
+          "id": "lecture_based",
+          "label": "Lecture-based",
+          "eric": [
+            "Lecture Method"
+          ]
+        },
+        {
+          "id": "active_learning",
+          "label": "Active learning",
+          "eric": [
+            "Active Learning"
+          ]
+        },
+        {
+          "id": "inquiry_based",
+          "label": "Inquiry-based",
+          "eric": [
+            "Inquiry"
+          ]
+        },
+        {
+          "id": "problem_project_based",
+          "label": "Problem- or project-based",
+          "eric": [
+            "Problem Based Learning"
+          ]
+        },
+        {
+          "id": "flipped",
+          "label": "Flipped classroom",
+          "eric": [
+            "Flipped Classroom"
+          ]
+        },
+        {
+          "id": "student_centered",
+          "label": "Student-centered",
+          "eric": [
+            "Student Centered Learning"
+          ]
+        },
+        {
+          "id": "research_experience",
+          "label": "Course-based or apprenticed research experience",
+          "eric": [
+            "Undergraduate Study"
+          ]
+        },
+        {
+          "id": "other_pedagogy",
+          "label": "Other",
+          "eric": []
+        }
+      ]
+    },
+    "study_design": {
+      "label": "Study design (evidence type)",
+      "definition": "The design that produced the evidence in the resource.",
+      "terms": [
+        {
+          "id": "cross_sectional",
+          "label": "Cross-sectional (single time point)",
+          "ddi": {
+            "cv": "TimeMethod",
+            "code": "CrossSection",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "descriptive",
+          "label": "Descriptive",
+          "eric": [
+            "Educational Research"
+          ]
+        },
+        {
+          "id": "correlational",
+          "label": "Correlational",
+          "eric": [
+            "Correlation"
+          ]
+        },
+        {
+          "id": "quasi_experimental",
+          "label": "Quasi-experimental",
+          "eric": [
+            "Quasiexperimental Design"
+          ]
+        },
+        {
+          "id": "randomized_experiment",
+          "label": "Randomized experiment",
+          "eric": [
+            "Randomized Controlled Trials"
+          ]
+        },
+        {
+          "id": "longitudinal",
+          "label": "Longitudinal",
+          "ddi": {
+            "cv": "TimeMethod",
+            "code": "Longitudinal",
+            "match": "exact"
+          },
+          "eric": [
+            "Longitudinal Studies"
+          ]
+        },
+        {
+          "id": "pre_post",
+          "label": "Pre/post measurement around an intervention",
+          "ddi": {
+            "cv": "TimeMethod",
+            "code": "Longitudinal",
+            "match": "related"
+          },
+          "eric": []
+        },
+        {
+          "id": "time_series",
+          "label": "Time series",
+          "ddi": {
+            "cv": "TimeMethod",
+            "code": "TimeSeries",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "qualitative",
+          "label": "Qualitative",
+          "eric": [
+            "Qualitative Research"
+          ]
+        },
+        {
+          "id": "mixed_methods",
+          "label": "Mixed methods",
+          "eric": [
+            "Mixed Methods Research"
+          ]
+        },
+        {
+          "id": "case_study",
+          "label": "Case study",
+          "eric": [
+            "Case Studies"
+          ]
+        },
+        {
+          "id": "design_based",
+          "label": "Design-based research",
+          "eric": [
+            "Research Design"
+          ]
+        },
+        {
+          "id": "program_evaluation",
+          "label": "Program evaluation",
+          "eric": [
+            "Program Evaluation"
+          ]
+        },
+        {
+          "id": "instrument_development",
+          "label": "Instrument development or validation",
+          "eric": [
+            "Test Construction",
+            "Psychometrics"
+          ]
+        },
+        {
+          "id": "secondary_analysis",
+          "label": "Secondary analysis of existing data",
+          "eric": [
+            "Data Analysis"
+          ]
+        },
+        {
+          "id": "meta_analysis",
+          "label": "Meta-analysis or systematic review",
+          "eric": [
+            "Meta Analysis"
+          ]
+        },
+        {
+          "id": "replication",
+          "label": "Replication",
+          "eric": [
+            "Replication (Evaluation)"
+          ]
+        },
+        {
+          "id": "ethnographic",
+          "label": "Ethnographic study",
+          "eric": [
+            "Ethnography"
+          ]
+        },
+        {
+          "id": "historical",
+          "label": "Historical study",
+          "eric": []
+        },
+        {
+          "id": "interpretive_critical",
+          "label": "Interpretive, critical, or theoretical study",
+          "eric": []
+        },
+        {
+          "id": "practice_based",
+          "label": "Practice-based or creative research (e.g., making artworks, performances, designs)",
+          "eric": []
+        }
+      ]
+    },
+    "unit_of_analysis": {
+      "label": "Unit of analysis",
+      "definition": "The unit the analysis is about. Follows the DDI AnalysisUnit vocabulary (2.1.3).",
+      "terms": [
+        {
+          "id": "individual",
+          "label": "Individual (person)",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "Individual",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "group",
+          "label": "Group (e.g., class, team, community)",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "Group",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "family_household",
+          "label": "Family or household",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "Household",
+            "match": "close"
+          },
+          "eric": []
+        },
+        {
+          "id": "organization",
+          "label": "Organization or institution",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "OrganizationOrInstitution",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "event",
+          "label": "Event, process, or activity",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "EventOrProcessOrActivity",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "place",
+          "label": "Geographic or political-administrative area",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "GeographicUnit",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "time_unit",
+          "label": "Time unit (e.g., year, period)",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "TimeUnit",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "text",
+          "label": "Text (e.g., document, book, post, transcript)",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "MediaUnit.Text",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "still_image",
+          "label": "Still image (e.g., photograph, artwork)",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "MediaUnit.StillImage",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "sound",
+          "label": "Sound (e.g., music, audio recording)",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "MediaUnit.Sound",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "video",
+          "label": "Video or film",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "MediaUnit.Video",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "object",
+          "label": "Object or artifact",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "Object",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "other_unit",
+          "label": "Other or multi-level",
+          "ddi": {
+            "cv": "AnalysisUnit",
+            "code": "Other",
+            "match": "exact"
+          },
+          "eric": []
+        }
+      ]
+    },
+    "sampling_procedure": {
+      "label": "Sampling procedure",
+      "definition": "How cases (people, texts, objects, sites) were selected. Follows the DDI SamplingProcedure vocabulary (2.0.2).",
+      "terms": [
+        {
+          "id": "census",
+          "label": "Total universe / complete enumeration (all eligible cases)",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "TotalUniverseCompleteEnumeration",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "simple_random",
+          "label": "Probability: simple random",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "Probability.SimpleRandom",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "systematic",
+          "label": "Probability: systematic random (e.g., every nth on a list)",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "Probability.SystematicRandom",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "stratified",
+          "label": "Probability: stratified",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "Probability.Stratified",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "cluster",
+          "label": "Probability: cluster (e.g., whole classes or schools)",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "Probability.Cluster",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "multistage",
+          "label": "Probability: multistage",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "Probability.Multistage",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "convenience",
+          "label": "Non-probability: availability / convenience (including volunteers)",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "Nonprobability.Availability",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "purposive",
+          "label": "Non-probability: purposive / criterion-based",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "Nonprobability.Purposive",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "quota",
+          "label": "Non-probability: quota",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "Nonprobability.Quota",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "snowball",
+          "label": "Non-probability: respondent-assisted / snowball",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "Nonprobability.RespondentAssisted",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "theoretical",
+          "label": "Theoretical sampling (cases chosen as theory develops)",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "TheoreticalSampling",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "mixed_sampling",
+          "label": "Mixed probability and non-probability",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "MixedProbabilityNonprobability",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "other_sampling",
+          "label": "Other",
+          "ddi": {
+            "cv": "SamplingProcedure",
+            "code": "Other",
+            "match": "exact"
+          },
+          "eric": []
+        }
+      ]
+    },
+    "measurement_evidence": {
+      "label": "Measurement evidence",
+      "definition": "Kinds of reliability or validity evidence the resource provides, following the sources of validity evidence in the Standards for Educational and Psychological Testing (AERA, APA, NCME, 2014).",
+      "terms": [
+        {
+          "id": "test_content",
+          "label": "Evidence based on test content",
+          "eric": [
+            "Content Validity",
+            "Test Validity"
+          ]
+        },
+        {
+          "id": "response_processes",
+          "label": "Evidence based on response processes",
+          "eric": [
+            "Test Validity"
+          ]
+        },
+        {
+          "id": "internal_structure",
+          "label": "Evidence based on internal structure",
+          "eric": [
+            "Construct Validity",
+            "Factor Analysis"
+          ]
+        },
+        {
+          "id": "relations_to_other_variables",
+          "label": "Evidence based on relations to other variables",
+          "eric": [
+            "Predictive Validity",
+            "Test Validity"
+          ]
+        },
+        {
+          "id": "consequences",
+          "label": "Evidence based on consequences of testing",
+          "eric": [
+            "Test Validity"
+          ]
+        },
+        {
+          "id": "reliability",
+          "label": "Reliability / precision",
+          "eric": [
+            "Test Reliability"
+          ]
+        },
+        {
+          "id": "fairness",
+          "label": "Fairness / differential item functioning",
+          "eric": [
+            "Test Bias"
+          ]
+        },
+        {
+          "id": "irt_scaling",
+          "label": "Item response theory scaling",
+          "eric": [
+            "Item Response Theory"
+          ]
+        }
+      ]
+    },
+    "data_collection_method": {
+      "label": "Data collection method",
+      "definition": "How data or sources were gathered. Each term maps to the DDI ModeOfCollection vocabulary (5.0.1).",
+      "terms": [
+        {
+          "id": "survey",
+          "label": "Survey or questionnaire",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "SelfAdministeredQuestionnaire",
+            "match": "close"
+          },
+          "eric": [
+            "Questionnaires",
+            "Surveys"
+          ]
+        },
+        {
+          "id": "assessment",
+          "label": "Test or assessment",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "MeasurementsAndTests",
+            "match": "exact"
+          },
+          "eric": [
+            "Tests"
+          ]
+        },
+        {
+          "id": "experiment",
+          "label": "Experiment (laboratory, field, or web-based)",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "Experiment",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "interview",
+          "label": "Interview",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "Interview",
+            "match": "exact"
+          },
+          "eric": [
+            "Interviews"
+          ]
+        },
+        {
+          "id": "focus_group",
+          "label": "Focus group",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "FocusGroup",
+            "match": "exact"
+          },
+          "eric": [
+            "Focus Groups"
+          ]
+        },
+        {
+          "id": "observation",
+          "label": "Observation (non-participant)",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "Observation",
+            "match": "close"
+          },
+          "eric": [
+            "Observation",
+            "Classroom Observation Techniques"
+          ]
+        },
+        {
+          "id": "ethnography",
+          "label": "Ethnography / participant observation",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "Observation.Field.Participant",
+            "match": "exact"
+          },
+          "eric": [
+            "Ethnography",
+            "Participant Observation"
+          ]
+        },
+        {
+          "id": "diaries",
+          "label": "Diaries, journals, or reflective writing",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "SelfAdministeredWritingsAndDiaries",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "recording",
+          "label": "Audio or video recording",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "Recording",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "visual_methods",
+          "label": "Visual or arts-based methods (e.g., photo elicitation, photovoice, drawing)",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "Other",
+            "match": "related"
+          },
+          "eric": []
+        },
+        {
+          "id": "artifacts",
+          "label": "Work samples, documents, or artifacts produced by participants (e.g., student work)",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "CompilationSynthesis",
+            "match": "related"
+          },
+          "eric": [
+            "Content Analysis"
+          ]
+        },
+        {
+          "id": "archival_research",
+          "label": "Archival research (finding and selecting records in archives or collections)",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "CompilationSynthesis",
+            "match": "close"
+          },
+          "eric": []
+        },
+        {
+          "id": "corpus_collection",
+          "label": "Assembling a corpus of texts, images, or media (e.g., published works, news)",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "CompilationSynthesis",
+            "match": "close"
+          },
+          "eric": []
+        },
+        {
+          "id": "web_platform_data",
+          "label": "Web or platform data collection (API, scraping, data donation)",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "AutomatedDataExtraction",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "learning_analytics",
+          "label": "Learning analytics or system log data",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "Observation.ComputerBased",
+            "match": "close"
+          },
+          "eric": [
+            "Learning Analytics"
+          ]
+        },
+        {
+          "id": "institutional_records",
+          "label": "Institutional or administrative records",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "AutomatedDataExtraction.DatabaseQuery",
+            "match": "related"
+          },
+          "eric": [
+            "Student Records"
+          ]
+        },
+        {
+          "id": "practice_based",
+          "label": "Practice-based or creative making (artworks, performances, designs)",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "Other",
+            "match": "related"
+          },
+          "eric": []
+        },
+        {
+          "id": "other_method",
+          "label": "Other",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "Other",
+            "match": "exact"
+          },
+          "eric": []
+        }
+      ]
+    },
+    "analysis_method": {
+      "label": "Analysis method",
+      "definition": "How the data or sources were analyzed. Covers quantitative, qualitative, interpretive, and computational approaches.",
+      "terms": [
+        {
+          "id": "statistical",
+          "label": "Statistical or quantitative analysis",
+          "eric": [
+            "Data Analysis"
+          ]
+        },
+        {
+          "id": "psychometric",
+          "label": "Psychometric or measurement modeling (e.g., factor analysis, IRT)",
+          "eric": [
+            "Psychometrics"
+          ]
+        },
+        {
+          "id": "thematic",
+          "label": "Qualitative coding or thematic analysis",
+          "eric": [
+            "Qualitative Research"
+          ]
+        },
+        {
+          "id": "content_analysis",
+          "label": "Content analysis",
+          "ddi": {
+            "cv": "ModeOfCollection",
+            "code": "ContentCoding",
+            "match": "close"
+          },
+          "eric": [
+            "Content Analysis"
+          ]
+        },
+        {
+          "id": "discourse_analysis",
+          "label": "Discourse or conversation analysis",
+          "eric": []
+        },
+        {
+          "id": "close_reading",
+          "label": "Close reading or textual analysis",
+          "eric": []
+        },
+        {
+          "id": "visual_analysis",
+          "label": "Visual or image analysis (e.g., photographs, artworks, film)",
+          "eric": []
+        },
+        {
+          "id": "historical_analysis",
+          "label": "Historical analysis or source criticism",
+          "eric": []
+        },
+        {
+          "id": "ethnographic_analysis",
+          "label": "Ethnographic or interpretive analysis",
+          "eric": []
+        },
+        {
+          "id": "critical_theoretical",
+          "label": "Critical or theoretical analysis",
+          "eric": []
+        },
+        {
+          "id": "computational",
+          "label": "Computational text or media analysis (e.g., text mining, NLP, image recognition)",
+          "eric": []
+        },
+        {
+          "id": "network_analysis",
+          "label": "Network analysis",
+          "eric": []
+        },
+        {
+          "id": "spatial_analysis",
+          "label": "Spatial or geographic analysis",
+          "eric": []
+        },
+        {
+          "id": "case_analysis",
+          "label": "Case analysis or comparative case study",
+          "eric": [
+            "Case Studies"
+          ]
+        },
+        {
+          "id": "other_analysis",
+          "label": "Other",
+          "eric": []
+        }
+      ]
+    },
+    "source_type": {
+      "label": "Source type",
+      "definition": "Kinds of sources studied that are not (only) data collected from participants: texts, images, artworks, media, records, objects, and online content. Mapped to DDI GeneralDataFormat and DataSourceType.",
+      "terms": [
+        {
+          "id": "texts",
+          "label": "Texts and documents (books, manuscripts, letters, policies, curricula)",
+          "ddi": {
+            "cv": "GeneralDataFormat",
+            "code": "Text",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "archival_records",
+          "label": "Archival or historical records",
+          "ddi": {
+            "cv": "DataSourceType",
+            "code": "RegistersRecordsAccounts.Historical",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "administrative_records",
+          "label": "Administrative or institutional records",
+          "ddi": {
+            "cv": "DataSourceType",
+            "code": "RegistersRecordsAccounts.Administrative",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "photographs",
+          "label": "Photographs and other images",
+          "ddi": {
+            "cv": "GeneralDataFormat",
+            "code": "StillImage",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "artworks",
+          "label": "Artworks (including participant or student artwork)",
+          "ddi": {
+            "cv": "GeneralDataFormat",
+            "code": "StillImage",
+            "match": "close"
+          },
+          "eric": []
+        },
+        {
+          "id": "audio",
+          "label": "Audio and music recordings",
+          "ddi": {
+            "cv": "GeneralDataFormat",
+            "code": "Audio",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "video_film",
+          "label": "Video and film",
+          "ddi": {
+            "cv": "GeneralDataFormat",
+            "code": "Video",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "news_media",
+          "label": "News and broadcast media",
+          "ddi": {
+            "cv": "DataSourceType",
+            "code": "Communications.Public",
+            "match": "close"
+          },
+          "eric": []
+        },
+        {
+          "id": "social_media",
+          "label": "Social media and online platform content",
+          "ddi": {
+            "cv": "DataSourceType",
+            "code": "Communications.Public",
+            "match": "close"
+          },
+          "eric": []
+        },
+        {
+          "id": "websites",
+          "label": "Websites and web archives",
+          "ddi": {
+            "cv": "GeneralDataFormat",
+            "code": "InteractiveResource",
+            "match": "related"
+          },
+          "eric": []
+        },
+        {
+          "id": "correspondence",
+          "label": "Private correspondence and personal papers",
+          "ddi": {
+            "cv": "DataSourceType",
+            "code": "Communications.Interpersonal",
+            "match": "close"
+          },
+          "eric": []
+        },
+        {
+          "id": "objects",
+          "label": "Material objects and artifacts",
+          "ddi": {
+            "cv": "DataSourceType",
+            "code": "PhysicalObjects",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "performances",
+          "label": "Performances and events",
+          "ddi": {
+            "cv": "DataSourceType",
+            "code": "EventsInteractions",
+            "match": "close"
+          },
+          "eric": []
+        },
+        {
+          "id": "maps_geospatial",
+          "label": "Maps and geospatial data",
+          "ddi": {
+            "cv": "GeneralDataFormat",
+            "code": "Geospatial",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "existing_datasets",
+          "label": "Existing research datasets",
+          "ddi": {
+            "cv": "DataSourceType",
+            "code": "ResearchData",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "software_games",
+          "label": "Software, games, or digital tools",
+          "ddi": {
+            "cv": "GeneralDataFormat",
+            "code": "Software",
+            "match": "exact"
+          },
+          "eric": []
+        },
+        {
+          "id": "other_source",
+          "label": "Other",
+          "ddi": {
+            "cv": "DataSourceType",
+            "code": "Other",
+            "match": "exact"
+          },
+          "eric": []
+        }
+      ]
+    },
+    "source_rights": {
+      "label": "Rights status of sources",
+      "definition": "Copyright or other rights status of the sources studied. Decides whether copies of sources can be shared. Related to RightsStatements.org statements.",
+      "terms": [
+        {
+          "id": "public_domain",
+          "label": "Public domain or no known copyright",
+          "rs": "NoC-US",
+          "eric": []
+        },
+        {
+          "id": "open_license",
+          "label": "Openly licensed (e.g., Creative Commons)",
+          "eric": []
+        },
+        {
+          "id": "permission",
+          "label": "In copyright, used with permission from rights holders",
+          "rs": "InC",
+          "eric": []
+        },
+        {
+          "id": "in_copyright",
+          "label": "In copyright, used under an exception such as fair use (copies not shared)",
+          "rs": "InC",
+          "eric": []
+        },
+        {
+          "id": "platform_terms",
+          "label": "Governed by platform terms of service",
+          "eric": []
+        },
+        {
+          "id": "mixed_rights",
+          "label": "Mixed: sources have different rights",
+          "eric": []
+        },
+        {
+          "id": "unknown_rights",
+          "label": "Not yet evaluated",
+          "rs": "CNE",
+          "eric": []
+        }
+      ]
+    },
+    "human_subjects_review": {
+      "label": "Human-subjects review",
+      "definition": "Status of ethics / IRB review, as reported by the researcher.",
+      "terms": [
+        {
+          "id": "approved",
+          "label": "Approved",
+          "eric": []
+        },
+        {
+          "id": "exempt",
+          "label": "Exempt determination",
+          "eric": []
+        },
+        {
+          "id": "not_human_subjects",
+          "label": "Determined not to be human-subjects research",
+          "eric": []
+        },
+        {
+          "id": "pending",
+          "label": "Submitted / pending",
+          "eric": []
+        },
+        {
+          "id": "not_assessed",
+          "label": "Not yet assessed",
+          "eric": []
+        },
+        {
+          "id": "other_review",
+          "label": "Other",
+          "eric": []
+        }
+      ]
+    },
+    "consent": {
+      "label": "Participation consent",
+      "definition": "How participants agreed to take part.",
+      "terms": [
+        {
+          "id": "informed_consent",
+          "label": "Informed consent",
+          "eric": [
+            "Informed Consent"
+          ]
+        },
+        {
+          "id": "permission_and_assent",
+          "label": "Parent/guardian permission and participant assent",
+          "eric": [
+            "Informed Consent"
+          ]
+        },
+        {
+          "id": "waiver",
+          "label": "Waiver or alteration of consent",
+          "eric": []
+        },
+        {
+          "id": "not_applicable",
+          "label": "Not applicable",
+          "eric": []
+        },
+        {
+          "id": "not_assessed",
+          "label": "Not yet assessed",
+          "eric": []
+        },
+        {
+          "id": "other_consent",
+          "label": "Other",
+          "eric": []
+        }
+      ]
+    },
+    "consent_for_sharing": {
+      "label": "Consent for data sharing",
+      "definition": "What participants (or the approved waiver) allow regarding sharing data beyond the research team.",
+      "terms": [
+        {
+          "id": "broad_sharing",
+          "label": "Broad sharing of de-identified data consented",
+          "eric": []
+        },
+        {
+          "id": "restricted_sharing",
+          "label": "Sharing only under restrictions (e.g., approved researchers, data-use agreement)",
+          "eric": []
+        },
+        {
+          "id": "no_sharing",
+          "label": "No sharing beyond the research team",
+          "eric": []
+        },
+        {
+          "id": "not_addressed",
+          "label": "Consent did not address sharing",
+          "eric": []
+        },
+        {
+          "id": "not_applicable",
+          "label": "Not applicable (no human-subjects data)",
+          "eric": []
+        }
+      ]
+    },
+    "identifiability": {
+      "label": "Identifiability",
+      "definition": "Identifiability of the data in this resource.",
+      "terms": [
+        {
+          "id": "identifiable",
+          "label": "Identifiable",
+          "eric": []
+        },
+        {
+          "id": "coded",
+          "label": "Coded / pseudonymous (a linking key exists)",
+          "eric": []
+        },
+        {
+          "id": "deidentified",
+          "label": "De-identified",
+          "eric": []
+        },
+        {
+          "id": "anonymous",
+          "label": "Anonymous (never linked to identity)",
+          "eric": []
+        },
+        {
+          "id": "aggregate_only",
+          "label": "Aggregate statistics only",
+          "eric": []
+        },
+        {
+          "id": "synthetic",
+          "label": "Synthetic",
+          "eric": []
+        },
+        {
+          "id": "not_applicable",
+          "label": "Not applicable (no participant data)",
+          "eric": []
+        }
+      ]
+    },
+    "sensitivity_flag": {
+      "label": "Sensitivity flags",
+      "definition": "Kinds of sensitive information present in the underlying data.",
+      "terms": [
+        {
+          "id": "direct_identifiers",
+          "label": "Direct identifiers",
+          "eric": [
+            "Privacy"
+          ]
+        },
+        {
+          "id": "indirect_identifiers",
+          "label": "Indirect identifiers or small groups",
+          "eric": [
+            "Privacy"
+          ]
+        },
+        {
+          "id": "sensitive_information",
+          "label": "Sensitive personal information",
+          "eric": [
+            "Confidentiality"
+          ]
+        },
+        {
+          "id": "education_records",
+          "label": "Education records (FERPA)",
+          "eric": [
+            "Student Records",
+            "Privacy"
+          ]
+        },
+        {
+          "id": "public_online_content",
+          "label": "Public online content that can be traced to its authors",
+          "eric": []
+        }
+      ]
+    },
+    "online_data_practice": {
+      "label": "Online data practices",
+      "definition": "How content collected from websites, social media, or other online platforms was handled. Informed by the Association of Internet Researchers' Internet Research: Ethical Guidelines 3.0 (2019).",
+      "terms": [
+        {
+          "id": "public_content",
+          "label": "Content was publicly available (no login or membership needed)",
+          "eric": []
+        },
+        {
+          "id": "private_spaces",
+          "label": "Some content is from closed or semi-private spaces (groups, forums, chats needing login)",
+          "eric": []
+        },
+        {
+          "id": "platform_terms",
+          "label": "Collected under the platform's terms of service or a data-access agreement",
+          "eric": []
+        },
+        {
+          "id": "author_consent",
+          "label": "Authors gave consent",
+          "eric": []
+        },
+        {
+          "id": "no_consent_public",
+          "label": "Consent not sought (public content; ethics review agreed or determined not needed)",
+          "eric": []
+        },
+        {
+          "id": "usernames_removed",
+          "label": "Usernames and profile details removed or replaced",
+          "eric": []
+        },
+        {
+          "id": "quotes_altered",
+          "label": "Quotes paraphrased or altered so authors cannot be found by searching",
+          "eric": []
+        },
+        {
+          "id": "ids_only",
+          "label": "Only post IDs or derived data are shared, not the content itself",
+          "eric": []
+        },
+        {
+          "id": "deletions_honored",
+          "label": "Content later deleted by its authors is removed from the dataset",
+          "eric": []
+        },
+        {
+          "id": "minors_possible",
+          "label": "Authors may include minors",
+          "eric": []
+        }
+      ]
+    },
+    "access_level": {
+      "label": "Access level",
+      "definition": "How the data in or described by this resource can be accessed.",
+      "terms": [
+        {
+          "id": "open",
+          "label": "Open (public)",
+          "eric": []
+        },
+        {
+          "id": "registered",
+          "label": "Registered users",
+          "eric": []
+        },
+        {
+          "id": "controlled",
+          "label": "Controlled access (application and/or data-use agreement)",
+          "eric": []
+        },
+        {
+          "id": "closed",
+          "label": "Closed (research team only)",
+          "eric": []
+        },
+        {
+          "id": "metadata_only",
+          "label": "Metadata only (data not shared)",
+          "eric": []
+        }
+      ]
+    },
+    "indigenous_data": {
+      "label": "Indigenous data",
+      "definition": "Whether the resource contains or derives from data about Indigenous Peoples, nations, communities, lands, territories, or knowledges.",
+      "terms": [
+        {
+          "id": "yes",
+          "label": "Yes",
+          "eric": [
+            "Indigenous Populations"
+          ]
+        },
+        {
+          "id": "no",
+          "label": "No",
+          "eric": []
+        },
+        {
+          "id": "unknown",
+          "label": "Unknown / not yet assessed",
+          "eric": []
+        }
+      ]
+    },
+    "indigenous_governance": {
+      "label": "Indigenous data governance",
+      "definition": "How Indigenous authority to control the data (CARE: Authority to control) is exercised.",
+      "terms": [
+        {
+          "id": "community_agreement",
+          "label": "Data governance agreement with the community or nation",
+          "eric": []
+        },
+        {
+          "id": "tribal_review",
+          "label": "Tribal or Indigenous research review approval",
+          "eric": []
+        },
+        {
+          "id": "consultation_ongoing",
+          "label": "Consultation in progress",
+          "eric": []
+        },
+        {
+          "id": "none",
+          "label": "No governance arrangement",
+          "eric": []
+        },
+        {
+          "id": "not_applicable",
+          "label": "Not applicable",
+          "eric": []
+        }
+      ]
+    },
+    "kind_of_data": {
+      "label": "Kind of data",
+      "definition": "Whether the data are quantitative, qualitative, or both. DDI Alliance KindOfData controlled vocabulary 1.0.0. Quantitative: numbers that can be counted, measured, and analyzed statistically. Qualitative: non-numeric data such as texts, images, or recordings, analyzed interpretively. Mixed: both.",
+      "terms": [
+        {
+          "id": "quantitative",
+          "label": "Quantitative",
+          "ddi": {
+            "cv": "KindOfData",
+            "code": "Quantitative",
+            "match": "exact"
+          }
+        },
+        {
+          "id": "qualitative",
+          "label": "Qualitative",
+          "ddi": {
+            "cv": "KindOfData",
+            "code": "Qualitative",
+            "match": "exact"
+          }
+        },
+        {
+          "id": "mixed",
+          "label": "Mixed (quantitative and qualitative)",
+          "ddi": {
+            "cv": "KindOfData",
+            "code": "Mixed",
+            "match": "exact"
+          }
+        }
+      ]
+    },
+    "tadirah_activity": {
+      "label": "Research activity (TaDiRAH)",
+      "definition": "Research activities from TaDiRAH 2.0.3, the Taxonomy of Digital Research Activities in the Humanities (DARIAH; CC0). Each term is a second-level TaDiRAH concept, shown with its top-level activity; 'tadirah' is the concept's identifier at https://vocabs.dariah.eu/tadirah/.",
+      "terms": [
+        {
+          "id": "converting",
+          "label": "Capturing: Converting",
+          "tadirah": "converting"
+        },
+        {
+          "id": "data_recognition",
+          "label": "Capturing: Data Recognition",
+          "tadirah": "dataRecognition"
+        },
+        {
+          "id": "discovering",
+          "label": "Capturing: Discovering",
+          "tadirah": "discovering"
+        },
+        {
+          "id": "extracting",
+          "label": "Capturing: Extracting",
+          "tadirah": "extracting"
+        },
+        {
+          "id": "gathering",
+          "label": "Capturing: Gathering",
+          "tadirah": "gathering"
+        },
+        {
+          "id": "imaging",
+          "label": "Capturing: Imaging",
+          "tadirah": "imaging"
+        },
+        {
+          "id": "recording",
+          "label": "Capturing: Recording",
+          "tadirah": "recording"
+        },
+        {
+          "id": "transcribing",
+          "label": "Capturing: Transcribing",
+          "tadirah": "transcribing"
+        },
+        {
+          "id": "annotating",
+          "label": "Enriching: Annotating",
+          "tadirah": "annotating"
+        },
+        {
+          "id": "data_cleansing",
+          "label": "Enriching: Data Cleansing",
+          "tadirah": "dataCleansing"
+        },
+        {
+          "id": "editing",
+          "label": "Enriching: Editing",
+          "tadirah": "editing"
+        },
+        {
+          "id": "content_analysis",
+          "label": "Analyzing: Content Analysis",
+          "tadirah": "contentAnalysis"
+        },
+        {
+          "id": "network_analysis",
+          "label": "Analyzing: Network Analysis",
+          "tadirah": "networkAnalysis"
+        },
+        {
+          "id": "relational_analysis",
+          "label": "Analyzing: Relational Analysis",
+          "tadirah": "relationalAnalysis"
+        },
+        {
+          "id": "spatial_analysis",
+          "label": "Analyzing: Spatial Analysis",
+          "tadirah": "spatialAnalysis"
+        },
+        {
+          "id": "structural_analysis",
+          "label": "Analyzing: Structural Analysis",
+          "tadirah": "structuralAnalysis"
+        },
+        {
+          "id": "stylistic_analysis",
+          "label": "Analyzing: Stylistic Analysis",
+          "tadirah": "stylisticAnalysis"
+        },
+        {
+          "id": "visual_analysis",
+          "label": "Analyzing: Visual Analysis",
+          "tadirah": "visualAnalysis"
+        },
+        {
+          "id": "contextualizing",
+          "label": "Interpreting: Contextualizing",
+          "tadirah": "contextualizing"
+        },
+        {
+          "id": "modeling",
+          "label": "Interpreting: Modeling",
+          "tadirah": "modeling"
+        },
+        {
+          "id": "theorizing",
+          "label": "Interpreting: Theorizing",
+          "tadirah": "theorizing"
+        },
+        {
+          "id": "archiving",
+          "label": "Storing: Archiving",
+          "tadirah": "archiving"
+        },
+        {
+          "id": "identifying",
+          "label": "Storing: Identifying",
+          "tadirah": "identifying"
+        },
+        {
+          "id": "organizing",
+          "label": "Storing: Organizing",
+          "tadirah": "organizing"
+        },
+        {
+          "id": "preserving",
+          "label": "Storing: Preserving",
+          "tadirah": "preserving"
+        },
+        {
+          "id": "designing",
+          "label": "Creating: Designing",
+          "tadirah": "designing"
+        },
+        {
+          "id": "programming",
+          "label": "Creating: Programming",
+          "tadirah": "programming"
+        },
+        {
+          "id": "translating",
+          "label": "Creating: Translating",
+          "tadirah": "translating"
+        },
+        {
+          "id": "web_development",
+          "label": "Creating: Web Development",
+          "tadirah": "webDevelopment"
+        },
+        {
+          "id": "writing",
+          "label": "Creating: Writing",
+          "tadirah": "writing"
+        },
+        {
+          "id": "collaborating",
+          "label": "Disseminating: Collaborating",
+          "tadirah": "collaborating"
+        },
+        {
+          "id": "commenting",
+          "label": "Disseminating: Commenting",
+          "tadirah": "commenting"
+        },
+        {
+          "id": "communicating",
+          "label": "Disseminating: Communicating",
+          "tadirah": "communicating"
+        },
+        {
+          "id": "crowdsourcing",
+          "label": "Disseminating: Crowdsourcing",
+          "tadirah": "crowdsourcing"
+        },
+        {
+          "id": "publishing",
+          "label": "Disseminating: Publishing",
+          "tadirah": "publishing"
+        },
+        {
+          "id": "teaching",
+          "label": "Disseminating: Teaching",
+          "tadirah": "teaching"
+        }
+      ]
+    }
+  }
+}

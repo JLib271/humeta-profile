@@ -1,0 +1,22 @@
+name: Comment on the profile
+description: A question, concern, or suggestion about an element, vocabulary, or the specification.
+labels: ["comment"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Element, vocabulary, or section
+      description: For example `study.ethics.consent_for_sharing`, the `study_design` vocabulary, or "Section 5".
+    validations:
+      required: true
+  - type: textarea
+    id: comment
+    attributes:
+      label: Your comment
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: Your field or role (optional)
+      description: For example "education researcher", "data curator", "Indigenous data governance".
