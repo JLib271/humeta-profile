@@ -1,6 +1,6 @@
 # HuMeta: The Social Science, Humanities, and Education Study Metadata Profile
 
-**Version:** 1.0.0-draft.2 · **Status:** Draft for community comment · **Namespace prefix:** `humeta`
+**Version:** 1.0.0-draft.3 · **Status:** Draft for community comment · **Namespace prefix:** `humeta`
 
 The HuMeta profile is a shared way to describe research studies
 and the data, instruments, and records they produce across the social
@@ -166,7 +166,8 @@ checks is `oem/profile.py` (`validate()`).
 
 | Element | Obl. | Vocabulary |
 |---|---|---|
-| `resource.title`, `.creators`, `.publisher`, `.publication_year`, `.resource_type` | M | DataCite resourceTypeGeneral |
+| `resource.title`, `.creators`, `.publisher`, `.publication_year` | M | DataCite |
+| `resource.resource_type` | O | DataCite resourceTypeGeneral; chosen at DOI export, not part of the study description |
 | `study.fields` | M | `research_field` (OECD FOS) |
 | `study.discipline` | R | `discipline` (ANZSRC 2020 FoR divisions and groups, with OECD FOS codes) |
 | `study.constructs` | MA (instruments; datasets with direct participants) | construct vocabulary |
@@ -386,7 +387,7 @@ of the HuMeta library. Code implementing it, such as the [HuMeta Portal](https:/
 
 > Libarkin, J. C., & HuMeta contributors. (2026). *HuMeta: The
 > Social Science, Humanities, and Education Study Metadata Profile* (Version
-> 1.0.0-draft.2). https://github.com/JLib271/humeta-profile
+> 1.0.0-draft.3). https://github.com/JLib271/humeta-profile
 
 A DOI will be registered for version 1.0.0 (DataCite resourceTypeGeneral
 `Standard`).
