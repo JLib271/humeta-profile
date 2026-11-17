@@ -7,7 +7,9 @@
   education research that joins the arts and design with STEM, including STEAM
   education, arts integration in STEM teaching, and sci-art. "STEAM" matches in
   capitals only, so steam engines are not matched; "arts and sciences" (a
-  college name) and "the art and science of" are not matched.
+  college name) and "the art and science of" are not matched. It is the first
+  discipline marked `named_only`: listings open to every STEM+ field are not
+  listed under it, only listings that name the arts.
 
 ## 1.0.0-draft.3 (2026-11-16)
 
