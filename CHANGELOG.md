@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+* **STEMEd+ disciplines, list version 6:** new **STEAM: Arts+STEM** discipline
+  (id `steam`, scope "education"; ANZSRC 36 and 3901): teaching, learning, and
+  education research that joins the arts and design with STEM, including STEAM
+  education, arts integration in STEM teaching, and sci-art. "STEAM" matches in
+  capitals only, so steam engines are not matched; "arts and sciences" (a
+  college name) and "the art and science of" are not matched.
+
 ## 1.0.0-draft.3 (2026-11-16)
 
 * **A profile describes the study, not one output of it.** `resource.resource_type`
