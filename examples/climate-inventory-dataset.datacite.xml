@@ -17,7 +17,7 @@
     <subject>climate change</subject>
     <subject>concept inventory</subject>
     <subject>Climate change understanding in introductory Earth science</subject>
-    <subject subjectScheme="HuMeta Constructs" schemeURI="https://w3id.org/humeta/construct" valueURI="https://w3id.org/humeta/construct/conceptual-understanding">Conceptual understanding</subject>
+    <subject subjectScheme="HuMeta Constructs" schemeURI="https://w3id.org/humeta/construct" valueURI="https://w3id.org/humeta/construct/hmc0006">Conceptual understanding</subject>
     <subject>Concern about climate change</subject>
     <subject subjectScheme="ANZSRC Fields of Research" schemeURI="https://linked.data.gov.au/def/anzsrc-for/2020" valueURI="https://linked.data.gov.au/def/anzsrc-for/2020/3702" classificationCode="3702">Climate change science</subject>
     <subject subjectScheme="ANZSRC Fields of Research" schemeURI="https://linked.data.gov.au/def/anzsrc-for/2020" valueURI="https://linked.data.gov.au/def/anzsrc-for/2020/37" classificationCode="37">Earth sciences</subject>
@@ -70,7 +70,7 @@
   </dates>
   <language>en</language>
   <relatedIdentifiers>
-    <relatedIdentifier relatedIdentifierType="URL" relationType="IsCollectedBy">https://w3id.org/humeta/instrument/climate-change-concept-inventory/ccci-2018</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="URL" relationType="IsCollectedBy">https://w3id.org/humeta/instrument/hmi0002.1</relatedIdentifier>
     <relatedIdentifier relatedIdentifierType="DOI" relationType="References">10.1007/s10584-018-2279-y</relatedIdentifier>
   </relatedIdentifiers>
   <sizes>

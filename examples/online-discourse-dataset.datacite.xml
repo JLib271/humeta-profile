@@ -18,7 +18,7 @@
     <subject>social media</subject>
     <subject>discourse</subject>
     <subject>Climate anxiety in public online discourse</subject>
-    <subject subjectScheme="HuMeta Frameworks" schemeURI="https://w3id.org/humeta/framework" valueURI="https://w3id.org/humeta/framework/semiotics">Semiotics and Visual Rhetoric</subject>
+    <subject subjectScheme="HuMeta Frameworks" schemeURI="https://w3id.org/humeta/framework" valueURI="https://w3id.org/humeta/framework/hmf0041">Semiotics and Visual Rhetoric</subject>
     <subject subjectScheme="ANZSRC Fields of Research" schemeURI="https://linked.data.gov.au/def/anzsrc-for/2020" valueURI="https://linked.data.gov.au/def/anzsrc-for/2020/4701" classificationCode="4701">Communication and media studies</subject>
     <subject subjectScheme="ANZSRC Fields of Research" schemeURI="https://linked.data.gov.au/def/anzsrc-for/2020" valueURI="https://linked.data.gov.au/def/anzsrc-for/2020/4703" classificationCode="4703">Language studies</subject>
     <subject subjectScheme="ANZSRC Fields of Research" schemeURI="https://linked.data.gov.au/def/anzsrc-for/2020" valueURI="https://linked.data.gov.au/def/anzsrc-for/2020/4705" classificationCode="4705">Literary studies</subject>

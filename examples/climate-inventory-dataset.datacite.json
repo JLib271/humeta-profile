@@ -37,7 +37,7 @@
       "subject": "Conceptual understanding",
       "subjectScheme": "HuMeta Constructs",
       "schemeUri": "https://w3id.org/humeta/construct",
-      "valueUri": "https://w3id.org/humeta/construct/conceptual-understanding"
+      "valueUri": "https://w3id.org/humeta/construct/hmc0006"
     },
     {
       "subject": "Concern about climate change"
@@ -340,7 +340,7 @@
   ],
   "relatedIdentifiers": [
     {
-      "relatedIdentifier": "https://w3id.org/humeta/instrument/climate-change-concept-inventory/ccci-2018",
+      "relatedIdentifier": "https://w3id.org/humeta/instrument/hmi0002.1",
       "relatedIdentifierType": "URL",
       "relationType": "IsCollectedBy"
     },

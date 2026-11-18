@@ -13,12 +13,16 @@
   only as the platform that registers its DOIs.
 * **Persistent identifiers for library terms.** DataCite exports now identify
   HuMeta constructs and theories/frameworks by their persistent identifiers,
-  `https://w3id.org/humeta/construct/<id>` and
-  `https://w3id.org/humeta/framework/<id>` (ids with `_` written as `-`;
-  schemes `https://w3id.org/humeta/construct` and `.../framework`), instead of
-  links into the library's GitHub files. Instruments are
-  `https://w3id.org/humeta/instrument/<id>[/<version>]`. The terms and their
-  ids are unchanged.
+  for example `https://w3id.org/humeta/construct/hmc0006` and
+  `https://w3id.org/humeta/framework/hmf0030` (schemes
+  `https://w3id.org/humeta/construct` and `.../framework`), instead of links
+  into the library's GitHub files. Instruments are
+  `https://w3id.org/humeta/instrument/hmi0002`, and a version of one
+  `https://w3id.org/humeta/instrument/hmi0002.1`. The identifiers are opaque
+  and are never reassigned or deleted; the HuMeta Instrument Library's
+  [identifier policy](https://github.com/JLib271/humeta-library/blob/main/IDENTIFIERS.md)
+  follows McMurry et al. (2017). Construct and framework ids in records are
+  unchanged.
 
 ## 1.0.0-draft.4 (2026-11-17)
 
