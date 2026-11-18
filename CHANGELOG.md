@@ -8,6 +8,9 @@
   FERPA standards are named as US standards, and R9 points researchers outside
   the US to their own student-records law. Term ids are unchanged, so existing
   records stay valid; exports made from now on use the new labels.
+* **STEMEd+ Commons named first.** The `resource.publisher` definition and the
+  README now name the STEMEd+ Commons Library, and mention Knowledge Commons
+  only as the platform that registers its DOIs.
 
 ## 1.0.0-draft.4 (2026-11-17)
 

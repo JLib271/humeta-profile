@@ -349,7 +349,7 @@ thesaurus download.
 
 ### Other targets
 
-Knowledge Commons Works and other InvenioRDM repositories, Dublin Core, and
+The STEMEd+ Commons Library and other InvenioRDM repositories, Dublin Core, and
 schema.org are candidate future targets. Because the profile is defined as
 data, adding a crosswalk does not change the profile.
 

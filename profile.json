@@ -243,7 +243,7 @@
       "obligation": "O",
       "cardinality": "1",
       "type": "text",
-      "definition": "Entity that holds, archives, or makes the study's registration available: the repository. Recorded when the study is registered (for the STEMEd+ Library, Knowledge Commons); DataCite exports default to Knowledge Commons.",
+      "definition": "Entity that holds, archives, or makes the study's registration available: the repository. Recorded when the study is registered. For studies registered in the STEMEd+ Commons Library, this is Knowledge Commons, the platform STEMEd+ Commons runs on, which registers its DOIs; DataCite exports use it by default.",
       "datacite": "publisher",
       "alignments": [
         {
