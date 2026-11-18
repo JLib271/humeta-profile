@@ -39,8 +39,8 @@
     {
       "subject": "Semiotics and Visual Rhetoric",
       "subjectScheme": "HuMeta Frameworks",
-      "schemeUri": "https://github.com/JLib271/humeta-library/blob/main/frameworks.json",
-      "valueUri": "https://github.com/JLib271/humeta-library/blob/main/frameworks.json#semiotics"
+      "schemeUri": "https://w3id.org/humeta/framework",
+      "valueUri": "https://w3id.org/humeta/framework/semiotics"
     },
     {
       "subject": "Communication and media studies",

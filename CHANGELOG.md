@@ -11,6 +11,14 @@
 * **STEMEd+ Commons named first.** The `resource.publisher` definition and the
   README now name the STEMEd+ Commons Library, and mention Knowledge Commons
   only as the platform that registers its DOIs.
+* **Persistent identifiers for library terms.** DataCite exports now identify
+  HuMeta constructs and theories/frameworks by their persistent identifiers,
+  `https://w3id.org/humeta/construct/<id>` and
+  `https://w3id.org/humeta/framework/<id>` (ids with `_` written as `-`;
+  schemes `https://w3id.org/humeta/construct` and `.../framework`), instead of
+  links into the library's GitHub files. Instruments are
+  `https://w3id.org/humeta/instrument/<id>[/<version>]`. The terms and their
+  ids are unchanged.
 
 ## 1.0.0-draft.4 (2026-11-17)
 
