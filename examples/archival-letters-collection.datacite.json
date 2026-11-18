@@ -39,8 +39,8 @@
     {
       "subject": "New Historicism and Cultural History",
       "subjectScheme": "HuMeta Frameworks",
-      "schemeUri": "https://github.com/JLib271/humeta-library/blob/main/frameworks.json",
-      "valueUri": "https://github.com/JLib271/humeta-library/blob/main/frameworks.json#new_historicism"
+      "schemeUri": "https://w3id.org/humeta/framework",
+      "valueUri": "https://w3id.org/humeta/framework/new-historicism"
     },
     {
       "subject": "Historical studies",
