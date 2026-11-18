@@ -2560,28 +2560,28 @@
     },
     "locale": {
       "label": "Locale",
-      "definition": "Community type where the study took place, using the four NCES locale types. Choose more than one for multi-site studies. For fully online studies, leave blank and use Modality.",
+      "definition": "Community type where the study took place, using the four locale types of the US National Center for Education Statistics (NCES). Outside the US, choose the closest type. Choose more than one for multi-site studies. For fully online studies, leave blank and use Modality.",
       "terms": [
         {
           "id": "city",
-          "label": "City (NCES 11–13)",
+          "label": "City (US NCES 11–13)",
           "eric": [
             "Urban Areas"
           ]
         },
         {
           "id": "suburb",
-          "label": "Suburb (NCES 21–23)",
+          "label": "Suburb (US NCES 21–23)",
           "eric": []
         },
         {
           "id": "town",
-          "label": "Town (NCES 31–33)",
+          "label": "Town (US NCES 31–33)",
           "eric": []
         },
         {
           "id": "rural",
-          "label": "Rural (NCES 41–43)",
+          "label": "Rural (US NCES 41–43)",
           "eric": [
             "Rural Areas"
           ]
@@ -3974,7 +3974,7 @@
         },
         {
           "id": "education_records",
-          "label": "Education records (FERPA)",
+          "label": "Education records (US FERPA)",
           "eric": [
             "Student Records",
             "Privacy"
