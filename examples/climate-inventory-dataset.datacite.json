@@ -63,7 +63,7 @@
       "valueUri": "https://github.com/JLib271/humeta-profile/blob/main/vocabularies.json#participant_role.students"
     },
     {
-      "subject": "City (NCES 11–13)",
+      "subject": "City (US NCES 11–13)",
       "subjectScheme": "HuMeta Locales",
       "schemeUri": "https://github.com/JLib271/humeta-profile/blob/main/vocabularies.json",
       "valueUri": "https://github.com/JLib271/humeta-profile/blob/main/vocabularies.json#locale.city"

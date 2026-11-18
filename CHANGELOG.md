@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+* **US standards say so.** Labels and descriptions that rely on US standards
+  now name the country: locale types read "City (US NCES 11–13)" and so on,
+  the sensitivity flag reads "Education records (US FERPA)", the NCES and
+  FERPA standards are named as US standards, and R9 points researchers outside
+  the US to their own student-records law. Term ids are unchanged, so existing
+  records stay valid; exports made from now on use the new labels.
+
 ## 1.0.0-draft.4 (2026-11-17)
 
 * **Construct names.** The shared construct vocabulary (HuMeta Instrument

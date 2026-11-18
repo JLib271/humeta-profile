@@ -82,7 +82,7 @@
     },
     "nces_locale": {
       "short": "NCES",
-      "name": "NCES locale classification (locale types City, Suburb, Town, Rural)",
+      "name": "US National Center for Education Statistics (NCES) locale classification (locale types City, Suburb, Town, Rural)",
       "url": "https://nces.ed.gov/programs/edge/Geographic/LocaleBoundaries"
     },
     "isced": {
@@ -102,7 +102,7 @@
     },
     "ferpa": {
       "short": "FERPA",
-      "name": "Family Educational Rights and Privacy Act (34 CFR Part 99)",
+      "name": "US Family Educational Rights and Privacy Act (FERPA, 34 CFR Part 99)",
       "url": "https://studentprivacy.ed.gov/"
     },
     "care": {
@@ -2062,7 +2062,7 @@
       "id": "R9",
       "severity": "warning",
       "check": "education_records_review",
-      "message": "Data from education records (FERPA): confirm the institution's FERPA review before any sharing."
+      "message": "Data from education records (US FERPA): confirm the institution's FERPA review before any sharing. Outside the US, follow your country's student-records law."
     },
     {
       "id": "R10",

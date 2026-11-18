@@ -107,7 +107,7 @@ study.population.sample_size,core,Sample size,DataCite,DataCite Metadata Schema 
 education.institution_types,education,Institution type,HuMeta,HuMeta profile (element or vocabulary defined by this profile),institution_type vocabulary,exact,,,https://github.com/JLib271/humeta-profile/blob/main/README.md
 education.institution_types,education,Institution type,ERIC,ERIC Thesaurus,descriptors,close,,,https://eric.ed.gov/?ti=all
 study.context.locale,core,Locale,HuMeta,HuMeta profile (element or vocabulary defined by this profile),locale vocabulary,exact,,,https://github.com/JLib271/humeta-profile/blob/main/README.md
-study.context.locale,core,Locale,NCES,"NCES locale classification (locale types City, Suburb, Town, Rural)",locale type,exact,,,https://nces.ed.gov/programs/edge/Geographic/LocaleBoundaries
+study.context.locale,core,Locale,NCES,"US National Center for Education Statistics (NCES) locale classification (locale types City, Suburb, Town, Rural)",locale type,exact,,,https://nces.ed.gov/programs/edge/Geographic/LocaleBoundaries
 study.context.locale,core,Locale,ERIC,ERIC Thesaurus,descriptors,close,,,https://eric.ed.gov/?ti=all
 education.modality,education,Instructional modality,HuMeta,HuMeta profile (element or vocabulary defined by this profile),modality vocabulary,exact,,,https://github.com/JLib271/humeta-profile/blob/main/README.md
 education.modality,education,Instructional modality,ERIC,ERIC Thesaurus,descriptors,close,,,https://eric.ed.gov/?ti=all
@@ -159,10 +159,10 @@ study.ethics.consent_for_sharing,core,Consent for data sharing,HuMeta,HuMeta pro
 study.ethics.consent_for_sharing,core,Consent for data sharing,schema.org,schema.org Dataset,conditionsOfAccess,related,,,https://schema.org/Dataset
 study.ethics.consent_for_sharing,core,Consent for data sharing,DataCite,DataCite Metadata Schema 4.7,rightsList,related,,,https://schema.datacite.org/
 study.ethics.identifiability,core,Identifiability,HuMeta,HuMeta profile (element or vocabulary defined by this profile),identifiability vocabulary,exact,,,https://github.com/JLib271/humeta-profile/blob/main/README.md
-study.ethics.identifiability,core,Identifiability,FERPA,Family Educational Rights and Privacy Act (34 CFR Part 99),de-identified records,related,,,https://studentprivacy.ed.gov/
+study.ethics.identifiability,core,Identifiability,FERPA,"US Family Educational Rights and Privacy Act (FERPA, 34 CFR Part 99)",de-identified records,related,,,https://studentprivacy.ed.gov/
 study.ethics.identifiability,core,Identifiability,DDI-C,DDI-Codebook 2.5 (Data Documentation Initiative),confDec,related,,,https://ddialliance.org/Specification/DDI-Codebook/2.5/
 study.ethics.sensitivity_flags,core,Sensitivity flags,HuMeta,HuMeta profile (element or vocabulary defined by this profile),sensitivity_flag vocabulary,exact,,,https://github.com/JLib271/humeta-profile/blob/main/README.md
-study.ethics.sensitivity_flags,core,Sensitivity flags,FERPA,Family Educational Rights and Privacy Act (34 CFR Part 99),education records,close,,,https://studentprivacy.ed.gov/
+study.ethics.sensitivity_flags,core,Sensitivity flags,FERPA,"US Family Educational Rights and Privacy Act (FERPA, 34 CFR Part 99)",education records,close,,,https://studentprivacy.ed.gov/
 study.ethics.online_data,core,Online data practices,HuMeta,HuMeta profile (element or vocabulary defined by this profile),online_data_practice vocabulary,exact,,,https://github.com/JLib271/humeta-profile/blob/main/README.md
 study.ethics.online_data,core,Online data practices,AoIR IRE 3.0,"Association of Internet Researchers, Internet Research: Ethical Guidelines 3.0 (2019)",ethical guidance,related,,,https://aoir.org/reports/ethics3.pdf
 study.ethics.access_level,core,Access level,HuMeta,HuMeta profile (element or vocabulary defined by this profile),access_level vocabulary,exact,,,https://github.com/JLib271/humeta-profile/blob/main/README.md

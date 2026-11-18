@@ -8,7 +8,7 @@ Obligations: **M** = Mandatory: every record must have it.; **MA** = Mandatory i
 
 Alignments: each element lists the standards it corresponds to. No mark = exact match; **≈** = close match; **~** = related. `HuMeta` = defined by this profile, with no equivalent in a general-purpose standard. *(expert input wanted)* = we are seeking expert input on this alignment. Full list, with notes, in [`crosswalks/alignments.csv`](crosswalks/alignments.csv).
 
-Standards: [HuMeta](https://github.com/JLib271/humeta-profile/blob/main/README.md) = HuMeta profile (element or vocabulary defined by this profile); [DataCite](https://schema.datacite.org/) = DataCite Metadata Schema 4.7; [DC](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) = Dublin Core (DCMI Metadata Terms); [schema.org](https://schema.org/Dataset) = schema.org Dataset; [ERIC](https://eric.ed.gov/?ti=all) = ERIC Thesaurus; [DDI-C](https://ddialliance.org/Specification/DDI-Codebook/2.5/) = DDI-Codebook 2.5 (Data Documentation Initiative); [DDI CV](https://rdf-vocabulary.ddialliance.org/) = DDI Alliance Controlled Vocabularies (CC BY 4.0); [OECD FOS](http://www.oecd.org/science/inno/38235147.pdf) = OECD Fields of Science and Technology (FOS), as used by DataCite; [ORCID](https://orcid.org/) = ORCID iD; [SPDX](https://spdx.org/licenses/) = SPDX License List; [BCP 47](https://www.rfc-editor.org/info/bcp47) = IETF BCP 47 language tags; [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) = ISO 3166-1 alpha-2 country codes; [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) = ISO 8601 dates; [NCES](https://nces.ed.gov/programs/edge/Geographic/LocaleBoundaries) = NCES locale classification (locale types City, Suburb, Town, Rural); [ISCED](https://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-isced-2011-en.pdf) = UNESCO International Standard Classification of Education (ISCED 2011); [AERA/APA/NCME](https://www.testingstandards.net/) = Standards for Educational and Psychological Testing (2014); [Common Rule](https://www.hhs.gov/ohrp/regulations-and-policy/regulations/45-cfr-46/) = US Common Rule for human-subjects research (45 CFR 46); [FERPA](https://studentprivacy.ed.gov/) = Family Educational Rights and Privacy Act (34 CFR Part 99); [CARE](https://www.gida-global.org/care) = CARE Principles for Indigenous Data Governance; [Local Contexts](https://localcontexts.org/) = Local Contexts Traditional Knowledge and Biocultural Labels and Notices; [RightsStatements](https://rightsstatements.org/) = RightsStatements.org rights statements; [AoIR IRE 3.0](https://aoir.org/reports/ethics3.pdf) = Association of Internet Researchers, Internet Research: Ethical Guidelines 3.0 (2019); [TaDiRAH](https://vocabs.dariah.eu/tadirah/) = TaDiRAH 2.0.3: Taxonomy of Digital Research Activities in the Humanities (DARIAH, CC0); [TEI](https://tei-c.org/guidelines/p5/) = TEI P5 Guidelines (Text Encoding Initiative); [ISO 639](https://www.loc.gov/standards/iso639-2/php/code_list.php) = ISO 639 language codes (as used in BCP 47); [ANZSRC FoR](https://linked.data.gov.au/def/anzsrc-for/2020) = Australian and New Zealand Standard Research Classification 2020: Fields of Research (ABS and Stats NZ)
+Standards: [HuMeta](https://github.com/JLib271/humeta-profile/blob/main/README.md) = HuMeta profile (element or vocabulary defined by this profile); [DataCite](https://schema.datacite.org/) = DataCite Metadata Schema 4.7; [DC](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) = Dublin Core (DCMI Metadata Terms); [schema.org](https://schema.org/Dataset) = schema.org Dataset; [ERIC](https://eric.ed.gov/?ti=all) = ERIC Thesaurus; [DDI-C](https://ddialliance.org/Specification/DDI-Codebook/2.5/) = DDI-Codebook 2.5 (Data Documentation Initiative); [DDI CV](https://rdf-vocabulary.ddialliance.org/) = DDI Alliance Controlled Vocabularies (CC BY 4.0); [OECD FOS](http://www.oecd.org/science/inno/38235147.pdf) = OECD Fields of Science and Technology (FOS), as used by DataCite; [ORCID](https://orcid.org/) = ORCID iD; [SPDX](https://spdx.org/licenses/) = SPDX License List; [BCP 47](https://www.rfc-editor.org/info/bcp47) = IETF BCP 47 language tags; [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) = ISO 3166-1 alpha-2 country codes; [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) = ISO 8601 dates; [NCES](https://nces.ed.gov/programs/edge/Geographic/LocaleBoundaries) = US National Center for Education Statistics (NCES) locale classification (locale types City, Suburb, Town, Rural); [ISCED](https://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-isced-2011-en.pdf) = UNESCO International Standard Classification of Education (ISCED 2011); [AERA/APA/NCME](https://www.testingstandards.net/) = Standards for Educational and Psychological Testing (2014); [Common Rule](https://www.hhs.gov/ohrp/regulations-and-policy/regulations/45-cfr-46/) = US Common Rule for human-subjects research (45 CFR 46); [FERPA](https://studentprivacy.ed.gov/) = US Family Educational Rights and Privacy Act (FERPA, 34 CFR Part 99); [CARE](https://www.gida-global.org/care) = CARE Principles for Indigenous Data Governance; [Local Contexts](https://localcontexts.org/) = Local Contexts Traditional Knowledge and Biocultural Labels and Notices; [RightsStatements](https://rightsstatements.org/) = RightsStatements.org rights statements; [AoIR IRE 3.0](https://aoir.org/reports/ethics3.pdf) = Association of Internet Researchers, Internet Research: Ethical Guidelines 3.0 (2019); [TaDiRAH](https://vocabs.dariah.eu/tadirah/) = TaDiRAH 2.0.3: Taxonomy of Digital Research Activities in the Humanities (DARIAH, CC0); [TEI](https://tei-c.org/guidelines/p5/) = TEI P5 Guidelines (Text Encoding Initiative); [ISO 639](https://www.loc.gov/standards/iso639-2/php/code_list.php) = ISO 639 language codes (as used in BCP 47); [ANZSRC FoR](https://linked.data.gov.au/def/anzsrc-for/2020) = Australian and New Zealand Standard Research Classification 2020: Fields of Research (ABS and Stats NZ)
 
 Modules: the **core** applies to every record; a field module (such as **Education**) applies only when a record includes it, and its mandatory elements are mandatory only then.
 
@@ -117,7 +117,7 @@ Optional module for studies in the arts and humanities: research activities (TaD
 | R6 | error | Data cannot be open or registered-access while human-subjects review is 'not yet assessed' or 'pending'. |
 | R7 | error | Indigenous data require a governance arrangement and a CARE statement. |
 | R8 | error | Indigenous data may be open only under a community data governance agreement or tribal review approval. |
-| R9 | warning | Data from education records (FERPA): confirm the institution's FERPA review before any sharing. |
+| R9 | warning | Data from education records (US FERPA): confirm the institution's FERPA review before any sharing. Outside the US, follow your country's student-records law. |
 | R10 | warning | Indigenous data status is unknown; assess it before sharing. |
 | R11 | warning | A specific community or a tribal college is involved; confirm whether the data are Indigenous data. |
 | R12 | warning | Direct identifiers are flagged; they must be removed before the data are shared. |
@@ -493,14 +493,14 @@ Type(s) of institution or organization where the study took place.
 
 ### <a id="locale"></a>Locale (`locale`)
 
-Community type where the study took place, using the four NCES locale types. Choose more than one for multi-site studies. For fully online studies, leave blank and use Modality.
+Community type where the study took place, using the four locale types of the US National Center for Education Statistics (NCES). Outside the US, choose the closest type. Choose more than one for multi-site studies. For fully online studies, leave blank and use Modality.
 
 | Code | Label | ERIC descriptors |
 |---|---|---|
-| `city` | City (NCES 11–13) | Urban Areas |
-| `suburb` | Suburb (NCES 21–23) |  |
-| `town` | Town (NCES 31–33) |  |
-| `rural` | Rural (NCES 41–43) | Rural Areas |
+| `city` | City (US NCES 11–13) | Urban Areas |
+| `suburb` | Suburb (US NCES 21–23) |  |
+| `town` | Town (US NCES 31–33) |  |
+| `rural` | Rural (US NCES 41–43) | Rural Areas |
 
 ### <a id="modality"></a>Instructional modality (`modality`)
 
@@ -778,7 +778,7 @@ Kinds of sensitive information present in the underlying data.
 | `direct_identifiers` | Direct identifiers | Privacy |
 | `indirect_identifiers` | Indirect identifiers or small groups | Privacy |
 | `sensitive_information` | Sensitive personal information | Confidentiality |
-| `education_records` | Education records (FERPA) | Student Records, Privacy |
+| `education_records` | Education records (US FERPA) | Student Records, Privacy |
 | `public_online_content` | Public online content that can be traced to its authors |  |
 
 ### <a id="online_data_practice"></a>Online data practices (`online_data_practice`)

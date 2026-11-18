@@ -176,7 +176,7 @@ checks is `oem/profile.py` (`validate()`).
 | `study.population.human_participants` | M | `human_participants` (direct / indirect / none) |
 | `study.population.participant_roles` | MA (people take part directly or indirectly) | `participant_role` |
 | `study.population.description`, `.sample_size` | R | |
-| `study.context.locale` | R | `locale` (NCES locale types) |
+| `study.context.locale` | R | `locale` (US NCES locale types) |
 | `study.evidence.study_designs` | MA (datasets, study registrations) | `study_design` |
 | `study.evidence.measurement_evidence` | O | `measurement_evidence` |
 | `study.evidence.data_collection_methods` | R | `data_collection_method` (mapped to DDI ModeOfCollection) |
@@ -221,13 +221,13 @@ Indigenous data governance to the access level a record declares:
 | R6 | error | No open or registered access while human-subjects review is not assessed or pending |
 | R7 | error | Indigenous data require a governance arrangement and a CARE statement |
 | R8 | error | Indigenous data may be open only under a community agreement or tribal review approval |
-| R9 | warning | Education records (FERPA): confirm institutional review before sharing |
+| R9 | warning | Education records (US FERPA): confirm institutional review before sharing |
 | R10 | warning | Indigenous data status unknown |
 | R11 | warning | A specific community or tribal college is involved: confirm Indigenous data status |
 | R12 | warning | Direct identifiers must be removed before sharing |
 
 These rules check consistency of what a researcher reports. They are not an
-IRB, FERPA, or legal determination, and they do not replace review by an
+IRB, US FERPA, or other legal determination, and they do not replace review by an
 institution or by Indigenous nations and communities.
 
 ## 4. CARE and Indigenous data governance
